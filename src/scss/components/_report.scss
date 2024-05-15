@@ -1,0 +1,104 @@
+
+.report {
+  margin: 150px 0;
+  .report__wrapper {
+  }
+  .report__header {
+      @include header-line;
+  }
+
+  .report__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 25px;
+
+  }
+  .report__left {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(20px, 3vw, 30px);
+      max-width: 540px;
+  }
+
+  .left-report__title {
+      color: var(--main-font);
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(22px, 2vw, 36px);
+      font-weight: 600;
+      line-height: 1.1;
+  }
+  .left-report__text {
+      color: var(--main-font);
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(14px, 1.6vw, 20px);
+      font-weight: 400;
+      line-height: 1.4;
+      max-width: 505px;
+  }
+
+  .left-report__btn {
+      color: #404040;
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(14px, 1.6vw, 20px);
+      font-weight: 600;
+      text-transform: uppercase;
+      display: flex;
+      width: clamp(200px, 17vw, 260px);
+      padding: 0px 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      text-align: center;
+      white-space: nowrap;
+      line-height: 1.1;
+      padding-top: clamp(15px, 2vw, 24px);
+      padding-bottom: clamp(15px, 2vw, 24px);
+  }
+  .report__right {
+      display: flex;
+      justify-content: end;
+  }
+
+  .report__img {
+      width: clamp(300px, 50vw, 67%);
+      position: relative;
+      margin-right: 3%;
+      background-image: url(/img/back-see-rekl.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .report__background-title{
+      position: absolute;
+      @include background-text;
+      top: 20%;
+      right: 40%;
+      z-index: -1;
+  }
+  .report__svg{
+      position: absolute;
+      top: 24%;
+      right: 20%;
+
+  }
+  .report__svg svg{
+      width: clamp(280px, 35vw, 100%);
+      backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width:768px) {
+  .report {
+      .report__header {
+          margin-bottom: 40px;
+      }
+      .report__body {
+          flex-direction: column;
+      }
+      .report__right {
+          justify-content: center;
+      }
+  }
+}

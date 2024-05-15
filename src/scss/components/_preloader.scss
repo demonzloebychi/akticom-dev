@@ -1,0 +1,46 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-background);
+  z-index: 100;
+  transition: all 1s ease 0s;
+  opacity: 1;
+  visibility: visible;
+  .loader {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    color: var(--main-font);
+    font-family: "Geologica", serif;
+    font-size: clamp(76px, 2vw, 128px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 2.56px;
+    text-transform: uppercase;
+  }
+  .progress-bar {
+    position: absolute;
+    bottom: 100px;
+    width: 90%;
+    height: 80px;
+    background: var(--main-background);
+    border-radius: 15px;
+    left: 5%;
+  }
+  .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #5b12b9;
+    height: 80px;
+    border-radius: 15px;
+  }
+}
+
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}

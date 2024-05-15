@@ -1,0 +1,80 @@
+// базовые подключения
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/base-style";
+
+@import "./components/header";
+
+@import "./components/footer";
+
+@import "./components/case-single";
+
+@import "./components/case-nav";
+
+@import "./components/preloader";
+
+@import "./components/animation";
+
+@import "./components/base";
+
+@import "./components/year";
+
+@import "./components/analitics";
+
+@import "./components/tasks";
+
+@import "./components/project";
+
+@import "./components/connect";
+
+@import "./components/start";
+
+@import "./components/products";
+
+@import "./components/team";
+
+@import "./components/function";
+
+@import "./components/tech-price";
+
+@import "./components/report";
+
+@import "./components/info";
+
+@import "./components/plan";
+
+@import "./components/models";
+
+@import "./components/see";
+
+@import "./components/spec";
+
+@import "./components/_photo-items";
+
+@import "./components/spoiler";
+
+@import "./components/back-on-top";
+
+.swiper-scrollbar {
+  background-color: #525252 !important;
+  border-radius: 10px !important;
+  position: relative;
+  z-index: 200 !important;
+  max-width: 90% !important;
+  margin-left: clamp(15px, 2.8vw, 70px);
+}
+
+.swiper-scrollbar-drag {
+  height: 10px !important;
+  position: relative;
+  background: var(--contrast-color) !important;
+  border-radius: 10px !important;
+  left: 0;
+  top: -4px !important;
+  cursor: pointer;
+}

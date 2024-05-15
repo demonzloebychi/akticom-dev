@@ -1,0 +1,134 @@
+
+
+.case-name__wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 40px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+}
+.case-name__btns{
+  display: flex;
+  gap: 10px;
+}
+
+
+.case-task__wrapper{
+  padding-block: 40px;
+  border-bottom: 1px solid #d9d9d9;
+
+}
+
+.case-task__photo {
+  display: flex;
+  justify-content: center;
+  img{
+      width: 100%;
+  }
+}
+
+.case-task__info {
+
+  padding: 80px 0 40px 0;
+}
+.display-case{
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  padding: 80px 0 40px 0;
+}
+
+.case-task__title {
+}
+
+.case-task__text {
+}
+
+
+.case-done__wrapper {
+  // padding-block: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.case-done__title {
+  padding-top: 30px;
+}
+.case-done__punkts {
+
+  .analitics__list {
+      width: 100%;
+  }
+}
+
+.case-concept__wrapper {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.case-concept__title {
+}
+.case-concept__imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(10px, 2vw, 30px);
+}
+
+.case-result__wrapper {
+  padding-block: 80px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.case-result-block__title {
+  color: var(--contrast-color);
+}
+.case-result__numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.case-result__block {
+  display: grid;
+  gap: 20px;
+}
+
+.case-result-block__text {
+  font-family: 'Manrope';
+  font-weight: 500;
+  font-size: clamp(16px, 2.2vw, 24px);
+  line-height: 110%;
+  color: var(--main-font);
+}
+
+
+@media (max-width:1024px) {
+  .case-result__numbers {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+  }
+
+}
+
+@media (max-width:768px) {
+  .display-case{
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+  }
+
+
+
+}
+@media (max-width:500px) {
+  .case-done__punkts {
+
+      .analitics-item__title {
+          width: fit-content;
+      }
+      .analitics-item__text {
+      }
+  }
+
+}

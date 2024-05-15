@@ -1,0 +1,314 @@
+.info{
+  margin: 30px 0 90px 0;
+  border-radius: 60px;
+  background: #1D1D1D;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+  z-index: -3;
+  .info__body {
+      display: flex;
+      flex-direction: column;
+      gap: 160px;
+  }
+
+  .info__view{
+      text-align: center;
+      max-width: 450px;
+      padding: 12px 20px 12px 20px;
+      border: 1px solid var(--main-font);
+      border-radius: 100px;
+      color: var(--main-font);
+      font-family: 'Geologica', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.1;
+  }
+
+
+
+  .info__top{
+      display: flex;
+      justify-content: space-between;
+  }
+  .info__top--promo{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+
+  .info__header{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  }
+  .info__header--design{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+    padding-right: 120px;
+
+  }
+  .info__header--promo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+
+  }
+
+  .info__title {
+      white-space: nowrap;
+      span{
+          color: var(--contrast-color);
+      }
+  }
+  .info__text {
+      color: #D3D3D3;
+      font-family: 'Manrope', serif;
+      font-size: clamp(18px, 2vw, 36px);
+      font-weight: 600;
+      line-height: 1.1;
+  }
+
+
+  .info__img {
+      max-width: 60%;
+      position: absolute;
+      z-index: -2;
+      top: 20%;
+      right: 5%;
+      background-image: url(/img/svg/info-fiol-circle.png);
+      background-repeat: no-repeat;
+    }
+  .info__img p{
+      opacity: 0.5;
+  }
+
+
+  .info__img--design{
+    margin: -80px 0 0 0;
+      max-width: 60%;
+      background: radial-gradient(closest-side, #9747FF33, transparent);
+  }
+  .info__img--promo{
+      margin: -80px 0 0 0;
+      max-width: 70%;
+      background: radial-gradient(farthest-side, #9747FF33, transparent);
+  }
+  .info__img--design .main{
+      position: relative;
+      max-width: 75%;
+      height: 80%;
+      margin-top: 145px;
+      margin-left: 25px;
+  }
+  .info__img--design .sub{
+      position: absolute;
+      top: -5%;
+      left: 2%;
+
+  }
+  .info__img--promo .main{
+    position: relative;
+    max-width: 90%;
+    height: 90%;
+    margin-top: 140px;
+    margin-left: 25px;
+}
+.info__img--promo .sub{
+    position: absolute;
+    top: 0%;
+    left: 2%;
+
+}
+
+
+  .info__img--analitics{
+      margin-top: -50px;
+      top: 0;
+      background: url(/img/svg/fiol-back.png);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+
+      right: 0;
+      max-width: 60%;
+      .info__img--svg{
+          position: absolute;
+          z-index: -2;
+          top: 20%;
+          left: 17%;
+      }
+  }
+
+
+
+  .info__back-text{
+      position: absolute;
+      top: 15%;
+      left: 0;
+      z-index: -3;
+      opacity: 0.5;
+  }
+  .info__cards-4{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(20px, 2.2vw, 40px);
+}
+
+  .info__cards--design{
+      margin-top: -350px;
+  }
+  .info__cards--promo{
+    margin-top: -300px;
+}
+  .info__cards {
+      margin-top:160px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+  }
+  .info__card {
+      border-radius: 15px;
+      background: #101010;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .card-info--design{
+      flex: 25% 1 1;
+      height: 267px;
+
+  }
+  .card-info {
+      height: 354px;
+  }
+  .card-info--analitics{
+    height: 287px;
+
+  }
+  .card-info__svg {
+
+  }
+  .info__card-text {
+      color: var(--main-font);
+      font-family: 'Manrope',serif;
+      font-size: clamp(16px, 1.6vw, 24px);
+      font-weight: 600;
+      line-height: 1.1;
+
+  }
+  .info__card-text span{
+      color: var(--contrast-color)
+  }
+
+  .card-info__svg--col {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .mr-small {
+          margin-left: 20px;
+      }
+  }
+}
+
+.info-reklama{
+  margin-top: 280px;
+}
+.info--promo{
+  margin-top: 230px;
+  padding-top: 200px;
+}
+
+@media (max-width:1635px) {
+
+
+  .info{
+    .info__header--design{
+      padding-right: 0px;
+    }
+  }
+  .info--promo{
+    margin-top: 150px;
+  }
+}
+
+@media (max-width:840px) {
+
+
+  .info{
+      padding-bottom: 70px;
+      border-radius: 20px;
+      .info__top {
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .info__cards-4{
+        grid-template-columns: 1fr 1fr;
+      }
+      .info__cards--design{
+          margin-top: -250px;
+      }
+
+  }
+}
+
+@media (max-width:768px) {
+  .info .info__cards {
+      margin-top: 20px;
+      grid-template-columns: 1fr;
+  }
+  .info .info__img p{
+      display: none;
+  }
+  .info .info__img {
+      max-width: 80%;
+      position: absolute;
+      z-index: -2;
+      top: 15%;
+      right: 10%;
+      background: radial-gradient(closest-side, rgba(151, 71, 255, 0.2), transparent);
+  }
+  .info .card-info {
+      height: 300px;
+  }
+
+  .info-reklama{
+    margin-top: 150px;
+  }
+  .info--promo{
+    margin-top: 110px;
+  }
+
+}
+
+@media (max-width:450px) {
+  .info{
+      .info__cards-4{
+          grid-template-columns: 1fr;
+      }
+      .info__img--design .sub {
+          position: absolute;
+          top: 10%;
+      }
+  }
+  .info-reklama{
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  .info--promo{
+    margin-top: 90px;
+  }
+}

@@ -1,0 +1,118 @@
+//появление сверху вниз
+._anim-fade-in-down {
+  transform: translate(0px, -120px);
+  transition: all 1.2s ease 0s;
+  opacity: 0;
+}
+._anim-fade-in-down._active {
+  transform: translate(0px, 0px);
+  transition: all 1.2s ease 0s;
+  opacity: 1;
+}
+//появление снизу вверх
+._anim-fade-in-top {
+  transform: translate(0px, 120px);
+  transition: all 1.2s ease 0s;
+  opacity: 0;
+}
+._anim-fade-in-top._active {
+  transform: translate(0px, 0px);
+  transition: all 1.2s ease 0s;
+  opacity: 1;
+}
+
+//появление справа в лево
+._anim-fade-in-left {
+  transform: translate(-320px, 0px);
+  transition: all 1s ease 0s;
+  opacity: 0;
+}
+._anim-fade-in-left._active {
+  transform: translate(0px, 0px);
+  transition: all 1s ease 0s;
+  opacity: 1;
+}
+
+//появление слева в право
+._anim-fade-in-right {
+  transform: translate(320px, 0px);
+  transition: all 1s ease 0s;
+  opacity: 0;
+}
+._anim-fade-in-right._active {
+  transform: translate(0px, 0px);
+  transition: all 1s ease 0s;
+  opacity: 1;
+}
+
+//появление мягкое
+._anim-fade-in-center {
+  transition: all 1s ease 0s;
+  opacity: 0;
+}
+._anim-fade-in-center._active {
+  transition: all 1s ease 0s;
+  opacity: 1;
+}
+
+//появление с задержкой
+._anim-fade-in-left-delay {
+  animation: in-left-delay 1s ease;
+  // animation-fill-mode: forwards;
+}
+
+@keyframes in-left-delay {
+  0% {
+    transform: translate(-320px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+._anim-from-left {
+  transform: translate(-120%, 0px);
+  transition: all 0.9s ease 0s;
+}
+._anim-from-left._active {
+  transform: translate(0px, 0px);
+  transition: all 0.9s ease 0s;
+}
+
+._anim-from-right {
+  transform: translate(120%, 0px);
+  transition: all 0.9s ease 0s;
+}
+._anim-from-right._active {
+  transform: translate(0px, 0px);
+  transition: all 0.9s ease 0s;
+}
+
+._anim-from-right-bot {
+  transform: translate(120%, 50%);
+  transition: all 0.9s ease 0s;
+}
+._anim-from-right-bot._active {
+  transform: translate(0px, 0px);
+  transition: all 0.9s ease 0s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}

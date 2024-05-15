@@ -1,0 +1,130 @@
+.info--analitics{
+  margin: 200px 0 0 0 !important;
+}
+
+.analitics {
+  margin: 270px 0 0px 0;
+  .analitics__wrapper {
+  }
+  .analitics__title {
+      @include header-line;
+      animation: slideLeft 2s;
+  }
+
+  .analitics__body {
+      display: flex;
+      justify-content: space-between;
+  }
+  .analitics__left{
+      position: relative;
+      margin-top: -90px;
+      margin-left: -70px;
+      z-index: 1;
+      background-image: url(/img/svg/fiol-back.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .analitics__right {
+  }
+
+
+}
+
+
+
+
+
+.analitics__list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+  width: clamp(290px, 60vw, 1333px);
+  .analitics-item{
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
+      padding-inline: clamp(10px, 2vw, 15px);
+      padding-block: clamp(20px, 4vw, 40px);
+      border-bottom: 1px solid rgb(161, 161, 161);
+
+  }
+  .analitics-item__num {
+      color: var(--contrast-color);
+      font-family: 'Geologica', sans-serif;
+      font-size: clamp(14px, 2vw, 24px);
+      font-weight: 500;
+      line-height: 110%;
+
+  }
+  .analitics-item__title {
+      color: var(--main-font);
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(16px, 2vw, 24px);
+      font-weight: 500;
+      line-height: 110%;
+      width: clamp(150px, 30vw, 400px);
+      margin-left: clamp(20px, 4vw, 50px);
+  }
+  .analitics-item__text {
+      color: rgb(226, 226, 226);
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(12px, 1.4vw, 16px);
+      font-weight: 300;
+      line-height: 140%;
+      margin-left: 10px;
+  }
+  .analitics-item__arrow{
+      margin-left: auto;
+      display: block;
+      margin-left: auto;
+      display: block;
+      position: relative;
+      z-index: 3;
+  }
+  .analitics-item__arrow svg{
+      width: clamp(16px, 2.2vw, 32px);
+  }
+}
+
+@media (max-width:960px) {
+  .analitics{
+    margin: 100px 0 0 0;
+      .analitics__body {
+          display: flex;
+          flex-direction: column;
+      }
+      .analitics__list{
+          width: 100%;
+      }
+      .analitics__left{
+          display: flex;
+          justify-content: center;
+          margin-top: -50px;
+          margin-left: 0;
+          background-size: contain;
+      }
+  }
+}
+
+@media (max-width:610px) {
+  .analitics{
+      .analitics__body {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .analitics__left{
+          display: flex;
+          justify-content: center;
+          margin-top: -50px;
+          margin-left: 0;
+          background-size: contain;
+      }
+  }
+  .analitics__list{
+      width: 100%;
+  }
+
+}

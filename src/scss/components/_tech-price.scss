@@ -1,0 +1,151 @@
+.tech-price {
+  margin: 150px 0;
+  .tech-price__header {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  }
+  .tech-price__title {
+      @include header-line;
+  }
+  .tech-price__wrapper {
+  }
+  .tech-price__cards {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .tech-price__cards--3 {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-inline: 210px;
+
+    }
+  .tech-price__card {
+
+  }
+  .tp-card {
+      // max-width: 100%;
+      height: 23.7vw;
+      padding: clamp(30px, 4vw, 65px);
+      border-radius: 50%;
+      border: 1px solid rgb(48, 48, 48);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+  }
+  @media (hover: hover){
+      .tp-card:hover{
+          border: 2px solid var(--contrast-color);
+          background: #303030;
+      }
+  }
+  @media (hover: none){
+      .tp-card:active{
+          border: 2px solid var(--contrast-color);
+          background: #303030;
+      }
+  }
+  .tp-card:not(:first-child){
+      margin-left: -27px;
+  }
+  .tp-card__type {
+      color: rgb(117, 117, 117);
+      font-family: 'Geologica', sans-serif;
+      font-size: clamp(14px, 1.3vw, 20px);
+      font-weight: 400;
+      line-height: 110%;
+      text-transform: uppercase;
+  }
+  .tp-card__center{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(16px, 4vw, 24px);
+  }
+  .tp-card__price {
+      color: var(--main-font);
+      font-family: 'Geologica', sans-serif;;
+      font-size: clamp(20px, 2.5vw, 40px);
+      font-weight: 400;
+      line-height: 110%;
+      text-transform: uppercase;
+      white-space: nowrap;
+  }
+  .tp-card__time {
+      font-size: clamp(14px, 1.3vw, 20px);    }
+  .green-text {
+  }
+  .tp-card__date {
+      color: rgb(66, 66, 66);
+      font-family: 'Geologica', sans-serif;
+      font-size: clamp(14px, 1.3vw, 20px);
+      font-weight: 400;
+      line-height: 110%;
+      text-transform: uppercase;
+  }
+}
+@media (max-width:1180px) {
+  .tech-price{
+      .tp-card {
+          height: 25vw;
+      }
+  }
+}
+@media (max-width:980px) {
+  .tech-price{
+      .tech-price__cards {
+          margin-top: 70px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      }
+      .tech-price__cards--3 {
+        grid-template-columns: 1fr 1fr;
+        margin-inline: 0px;
+        margin-top: 0px;
+      }
+      .tp-card {
+          height: 47vw;
+      }
+      .tp-card:not(:first-child){
+          margin-left: 0px;
+      }
+
+  }
+}
+@media (max-width:470px) {
+  .tech-price{
+    margin: 50px 0 0 0;
+      .tech-price__cards {
+          margin-top: 70px;
+          grid-template-columns: 1fr;
+      }
+      .tech-price__cards--3 {
+        grid-template-columns: 1fr;
+    }
+      .tp-card {
+          height: 95vw;
+      }
+      .tp-card:not(:first-child){
+          margin-left: 0px;
+          margin-top: -10px;
+      }
+
+  }
+}
+
+
+
+.pp-card__type {
+  max-width: 85%;
+  font-family: 'Geologica', sans-serif;
+  font-size: clamp(14px, 1.3vw, 20px);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 110%;
+  text-align: center;
+  color: var(--contrast-color);
+}

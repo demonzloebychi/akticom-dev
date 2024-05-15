@@ -1,0 +1,127 @@
+
+.models {
+  margin: 205px 0;
+  .models__body {
+  }
+  .models__header {
+      margin-bottom: 62px;
+      @include header-line;
+  }
+  .models__title {
+  }
+  .models__cards {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 40px;
+  }
+  .models__card {
+      background-color: #1D1D1D;
+      padding: 30px;
+      border-radius: 15px;
+      width: 410px;
+      height: 455px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: -2;
+  }
+  .card-models {
+  }
+  .card-models__top {
+      display: flex;
+      justify-content: space-between;
+  }
+  .card-models__num {
+      color: #B8FF20;
+      font-family: 'Geologica', serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 110%;
+      text-transform: uppercase;
+  }
+  .card-models__svg {
+  }
+  .card-models__img {
+      position: absolute;
+      z-index: -1;
+  }
+  .card-models__img svg{
+      max-width: 100%;
+  }
+  .card-models__img--col{
+      position: relative;
+
+  }
+  .card-models__img--svg{
+      position: absolute;
+      right: 8%;
+      bottom: 0;
+  }
+  .card-models__img--svg-b{
+      position: absolute;
+      margin-top: -25px;
+  }
+  .card-models__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      height: 130px;
+  }
+  .card-models__title {
+      color: #FFF;
+      font-family: 'Manrope', serif;
+      font-size: clamp(20px, 2vw, 24px);
+      font-weight: 500;
+      line-height: 110%;
+  }
+  .card-models__text {
+      color: #E2E2E2;
+      font-family: 'Manrope', serif;
+      font-size: clamp(14px, 1.8vw, 16px);
+      font-weight: 300;
+      line-height: 140%;
+      white-space: nowrap;
+  }
+
+}
+
+
+@media (max-width:840px) {
+  .models {
+      .models__cards {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .models__card {
+          width: 100%;
+      }
+      .card-models__img {
+          width: 80%;
+          margin-left: 50px;
+          margin-top: -70px;
+      }
+      .card-models__bottom{
+        height: auto;
+
+      }
+
+  }
+}
+@media (max-width:425px) {
+  .models {
+      margin: 75px 0;
+      .card-models__text {
+          white-space: wrap;
+          br{
+              display: none;
+          }
+      }
+      .models__card {
+          height: auto;
+          aspect-ratio: 1;
+      }
+  }
+
+}
