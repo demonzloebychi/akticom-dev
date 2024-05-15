@@ -136,7 +136,6 @@ for (i = 0; i < subLink.length; i++) {
 function openTab(event, id) {
   var i, content, btn;
 
-  // const closestImage = document.querySelectorAll('.main-closeset');
   closestImage1 = document.querySelector(".main-tab-1");
   closestImage2 = document.querySelector(".main-tab-2");
   closestImage3 = document.querySelector(".main-tab-3");
@@ -156,7 +155,6 @@ function openTab(event, id) {
   event.currentTarget.className += " is-active";
 
   if (event.type === "mouseout") {
-    // closestImage.style.display = 'none';
     closestImage1.style.display = "none";
     closestImage2.style.display = "none";
     closestImage3.style.display = "none";
@@ -196,14 +194,12 @@ let projectTab = function () {
 };
 projectTab();
 
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the current tab
+var currentTab = 0;
+showTab(currentTab);
 
 function showTab(n) {
-  // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
-  // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.opacity = "0.5";
     document.getElementById("prevBtn").disabled = true;
@@ -211,67 +207,47 @@ function showTab(n) {
     document.getElementById("prevBtn").style.opacity = "1";
     document.getElementById("prevBtn").disabled = false;
   }
-  //   if (n == (x.length - 1)) {
-  //     document.getElementById("nextBtn").innerHTML = "Submit";
-  //   } else {
-  //     document.getElementById("nextBtn").innerHTML = "Next";
-  //   }
-  // ... and run a function that displays the correct step indicator:
+
   fixStepIndicator(n);
 }
 
 function nextPrev(n) {
-  // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
   x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form... :
   if (currentTab >= x.length) {
-    //...the form gets submitted:
     document.getElementById("regForm").submit();
     return false;
   }
-  // Otherwise, display the correct tab:
   showTab(currentTab);
 }
 
 function validateForm() {
-  // This function deals with validation of the form fields
   var x,
     y,
     i,
     valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
-    // If a field is empty...
     if (y[i].value == "") {
-      // add an "invalid" class to the field:
       y[i].className += " invalid";
-      // and set the current valid status to false:
       valid = false;
     }
   }
-  // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
-  return valid; // return the valid status
+  return valid;
 }
 
 function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
   var i,
     x = document.getElementsByClassName("step");
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace(" active", "");
   }
-  //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
 
@@ -370,33 +346,11 @@ for (let i = 0; i < spoilerItems.length; i++) {
 document.addEventListener("DOMContentLoaded", function () {
   const backToTop = document.getElementById("back-to-top");
 
-  // function handleScroll() {
-
-  //   const backToTop = document.getElementById("back-to-top");
-
-  //   // handleScroll будет вызываться каждый раз, когда пользователь прокручивает страницу, теперь нужно общее количество пикселей, которые  можно прокрутить
-
-  //   var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;  // scrollHeight дает высоту элемента, включая ту часть, которая не видна из-за переполнения, clientHeight дает внутреннюю высоту элемента в пикселях, которая является высотой видимой части
-  //                                                                           //Если вычитать из scrollHeight clientHeight, получим общее количество пикселей, которые можно прокрутить
-
-  //   if ((rootElement.scrollTop / scrollTotal > 0.76)) {                      //scrollTotal  представляет собой максимальное количество пикселей, которые можно прокручивать по вертикали
-  //                                                                            //разделив количество прокручиваемых пикселей на общее количество пикселей, которые  можно прокрутить, получим соотношение от 0 до 1
-  //     backToTop.style.display = 'block';
-  //   } else {
-
-  //     backToTop.style.display = 'none';
-  //   }
-  // }
-
-  // Плавная прокрутка при клике на кнопку
-
   backToTop.addEventListener("click", function (event) {
     event.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
-
-// document.addEventListener("scroll", handleScroll);
 
 document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(
@@ -407,9 +361,3 @@ document.addEventListener("DOMContentLoaded", () => {
     element.style.animationDelay = `${index * 0.05}s`;
   });
 });
-
-// const animatedElements = document.querySelectorAll("._anim-fade-in-left-delay");
-
-// animatedElements.forEach((element, index) => {
-//   element.style.animationDelay = $`{index * 0.1}s`;
-// });
