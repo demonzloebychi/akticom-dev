@@ -82,7 +82,7 @@
   position: absolute;
   z-index: 7;
   max-width: 80%;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
   top: 120px;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .spoiler-item.active .spoiler__text {
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
   right: 0;
 }
 
