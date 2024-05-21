@@ -106,6 +106,8 @@
 @media (max-width:450px) {
 
   .products {
+    margin: 0;
+
       .products__btns {
           display: none;
       }
@@ -127,7 +129,7 @@
       }
 
       .swiper {
-          height: 600px;
+          height: 550px;
       }
 
       .swiper-scrollbar{

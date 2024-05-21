@@ -2,11 +2,11 @@
 }
 .nav-case {
   display: flex;
-  gap: 25px;
+  gap: clamp(10px, 2vw, 25px);
   flex-wrap: wrap;
   padding-block: 40px;
   border-bottom: 1px solid #d9d9d9;
-}
+} 
 .nav-case__item {
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
   user-select: none;
   color: var(--main-font);
   font-family: "Geologica", serif;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: 400;
   line-height: 1.1;
 }

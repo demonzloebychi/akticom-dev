@@ -1,5 +1,6 @@
 .info--analitics{
-  margin: 200px 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  margin-top: clamp(30px, 3vw, 200px) !important;
 }
 
 .analitics {
@@ -9,7 +10,7 @@
   .analitics__title {
       @include header-line;
       animation: slideLeft 2s;
-  }
+  } 
 
   .analitics__body {
       display: flex;
@@ -112,13 +113,17 @@
   .analitics{
       .analitics__body {
           display: flex;
-          flex-direction: column;
+          flex-direction: column-reverse;
       }
 
+      .analitics__right{
+        margin-top: 20px;
+      }
       .analitics__left{
           display: flex;
           justify-content: center;
-          margin-top: -50px;
+          margin-top: 0px;
+          margin-bottom: -50px;
           margin-left: 0;
           background-size: contain;
       }
