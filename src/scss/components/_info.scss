@@ -237,6 +237,7 @@
 
 
   .info{
+
     .info__header--design{
       padding-right: 0px;
     }
@@ -267,6 +268,17 @@
 }
 
 @media (max-width:768px) {
+  .info{
+    .card-info--design{
+      height: 100%;
+      gap: 20px;
+  }
+  .info__card-text {
+    br{
+      display: none;
+    }
+}
+  }
   .info .info__cards {
       margin-top: 20px;
       grid-template-columns: 1fr;

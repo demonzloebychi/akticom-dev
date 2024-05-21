@@ -127,6 +127,33 @@
           margin-left: 0;
           background-size: contain;
       }
+      .analitics__list{
+        .analitics-item{
+            display: grid;
+            grid-template-areas: 
+            "a b b b d"
+            "c c c c c";
+            grid-template-columns: 30px 1fr 40px;
+            .analitics-item__num{
+                grid-area: a;
+            }
+            .analitics-item__title{
+                grid-area: b;
+                margin-left: 0px;
+                width: 100%;
+                text-align: start;
+
+            }
+            .analitics-item__arrow{
+                grid-area: d;
+            }
+            .analitics-item__text{
+                margin-left: 0px;
+                grid-area: c;
+            }
+        }
+      }
+    
   }
   .analitics__list{
       width: 100%;
