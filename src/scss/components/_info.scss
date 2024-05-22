@@ -81,7 +81,7 @@
       max-width: 60%;
       position: absolute;
       z-index: -2;
-      top: 20%;
+      top: 15%;
       right: 5%;
       background-image: url(/img/svg/info-fiol-circle.png);
       background-repeat: no-repeat;
@@ -92,8 +92,8 @@
 
 
   .info__img--design{
-    margin: -80px 0 0 0;
-      max-width: 60%;
+    margin: -40px 0 0 0;
+      // max-width: 60%;
       background: radial-gradient(closest-side, #9747FF33, transparent);
   }
   .info__img--promo{
@@ -101,17 +101,25 @@
       max-width: 70%;
       background: radial-gradient(farthest-side, #9747FF33, transparent);
   }
-  .info__img--design .main{
-      position: relative;
-      max-width: 75%;
-      height: 80%;
-      margin-top: 145px;
-      margin-left: 25px;
-  }
+  // .info__img--design .main{
+  //     position: relative;
+  //     max-width: 75%;
+  //     height: 80%;
+  //     margin-top: 145px;
+  //     margin-left: 25px;
+  // }
   .info__img--design .sub{
-      position: absolute;
+      // position: absolute;
+      // top: -5%;
+      // left: 2%;
+
+      position: relative;
       top: -5%;
       left: 2%;
+      background: url(../img/info-abstract.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 75%;
 
   }
   .info__img--promo .main{
@@ -269,6 +277,8 @@
 
 @media (max-width:768px) {
   .info{
+    padding-bottom: 42px;
+    margin: 30px 0 0px 0;
     .card-info--design{
       height: 100%;
       gap: 20px;
@@ -312,10 +322,10 @@
       .info__cards-4{
           grid-template-columns: 1fr;
       }
-      .info__img--design .sub {
-          position: absolute;
-          top: 10%;
-      }
+      // .info__img--design .sub {
+      //     position: absolute;
+      //     top: 10%;
+      // }
   }
   .info-reklama{
     margin-top: 80px;
