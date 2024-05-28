@@ -148,13 +148,14 @@
   }
   .plan-card__svg {}
 
-  .plan__card-text {
-      color: var(--main-font);
-      font-family: 'Manrope',serif;
-      font-size: clamp(16px, 1.6vw, 36px);
-      font-weight: 600;
-      line-height: 1.1;
-  }
+//   .plan__card-text {
+//       color: var(--main-font);
+//       font-family: 'Manrope', sans-serif;
+//       font-size: clamp(16px, 1.6vw, 36px);
+//       font-weight: 600;
+//       line-height: 1.1;
+//   }
+  
   .plan__card-text span{
       color: var(--contrast-color)
   }

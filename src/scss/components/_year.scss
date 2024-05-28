@@ -15,12 +15,7 @@
           display: flex;
           flex-direction: column;
           gap: 30px;
-          .year__text {
-             -webkit-text-stroke: 2px #FFF;
-              writing-mode: vertical-lr;
-              white-space: nowrap;
-
-          }
+         
           .year__text-p{
               font-size: 16px;
               color: #E2E2E2;
@@ -32,16 +27,32 @@
           .year__info{
               display: flex;
               gap: 44px;
-
+              display: grid;
+              grid-template-areas: 
+              'a b b b'
+              'a c c c'
+              ;
           }
+          .year__text {
+            grid-area: a;
+            -webkit-text-stroke: 2px #FFF;
+             writing-mode: vertical-lr;
+             white-space: nowrap;
+
+         }
           .year__title {
+              grid-area: b;
               white-space: nowrap;
               font-size: clamp(24px, 4vw, 72px);
           }
 
           .year__btn {
-              margin-top: -100px;
-              margin-left: 160px;
+              grid-area: c;
+              // margin-top: -100px;
+              // margin-left: 160px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               white-space: nowrap;
               color: #404040;
               font-family: 'Manrope', sans-serif;
@@ -126,6 +137,9 @@
   }
   .year{
     .year__body{
+      flex-direction: column;
+      align-items: center;
+      gap: 13px;
       .year__right{
         .year__img--design {
           margin-left: 0;
@@ -142,43 +156,43 @@
         }
        
     }
-    .year__left{
-      .year__title {
-        white-space: wrap;
-      }
-      .year__text{
-        writing-mode: horizontal-tb;
-        font-size: 40px;
+      .year__left{
+      gap: 20px;
 
+        .year__btn {
+          
+        }
+        .year__title {
+          white-space: wrap;
+        }
+        .year__text{
+          writing-mode: horizontal-tb;
+          font-size: 40px;
+
+        }
+        .year__info{
+            grid-template-areas:
+            'a'
+            'b'
+            'c'
+            ;
+            justify-items: center;
+            gap: 16px;
+            br{
+              display: none;
+            }
+        }
+
+        .year__info--design {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
       }
-      .year__info--design {
-        margin-top: 0px;
-        margin-left: 0px;
-      }
-    }
     } 
 
   } 
 
-  .year .year__body .year__left {
-      gap: 20px;
-      .year__text {
-    }
-  }
   
-  .year__body {
-      flex-direction: column;
-      align-items: center;
-      gap: 13px;
-  }
-  .year .year__body .year__left .year__btn {
-      margin-top: 0px;
-      margin-left: 0px;
-  }
-  .year .year__body .year__left .year__info{
-      gap: 16px;
-
-  }
   .year--design{
     margin-top: 100px;
   }
@@ -218,153 +232,5 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-.photo-items {
-  margin: 60px 0 150px 0;}
-  .photo-items__wrapper {
-      position: relative;
-  }
-  .swiper {
-      width: 100%;
-      height: 900px;
-      padding-top: 100px;
-  }
-
-  .swiper-slide{
-    width: fit-content;
-  }
-
-
-  .photo-items__header {
-      @include header-line;
-      margin-bottom: 62px;
-  }
-  .photo-items__title {
-  }
-
-  .photo-items__btns {
-      display: flex;
-      gap: 20px;
-      top: 120px;
-      right: 230px;
-      position: absolute;
-  }
-  .swiper-button-prev {
-  }
-  .square__btn{
-      width: 60px;
-      height: 60px;
-      border-radius: 5px;
-  }
-  .swiper-button-next {
-      left: 80px;
-  }
-  .swiper__wrapper {
-  }
-  .photo-items__cards {
-      display: flex;
-      gap: 50px;
-      margin-left: 15px;
-      padding-left: calc((100% - 1760px) / 2);
-  }
-  .photo-items__card{
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      padding: 30px;
-      background-color: #525252;
-      width: fit-content;
-      height: fit-content;
-      border-radius: 20px;
-  }
-  .card-photo-items {
-
-
-  }
-
-  .card-photo-items__img{
-      max-width: 100%;
-  }
-  .card-photo-items__texts{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .card-photo-items__name {
-      color: var(--main-font);
-      font-family: 'Manrope', serif;
-      font-size: clamp(20px, 2vw, 24px);
-      font-weight: 600;
-      line-height: 1.1;
-      letter-spacing: -0.72px;
-      margin-top: 10px;
-  }
-
-
-
-@media (max-width:930px) {
-  .photo-items .photo-items__btns {
-      left: 0;
-      bottom: -510px;
-  }
-
-}
-@media (max-width:450px) {
-  .photo-items {
-      margin: 75px 0;}
-      .photo-items__btns {
-          display: none;
-      }
-      .photo-items__header{
-          margin-bottom: 20px;
-      }
-      .swiper {
-          width: 100%;
-          height: 600px;
-          padding-top: 100px;
-      }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

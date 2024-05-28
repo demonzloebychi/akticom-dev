@@ -13,7 +13,7 @@
   }
   .swiper {
       width: 100%;
-      height: 780px;
+      height: 700px;
       padding-top: 100px;
   }
 
@@ -49,8 +49,11 @@
       min-height: 230px;
       height: 410px;
       padding: 40px;
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
       justify-content: space-between;
   }
   .card-products__top{
@@ -61,6 +64,7 @@
   .card-products__bottom{
       display: flex;
       flex-direction: column;
+      align-items: start;
       gap: 20px;
 
   }
@@ -79,13 +83,14 @@
       font-weight: 500;
       line-height: 1.1;
       white-space: nowrap;
-  }
+    }
   .card-products__line{
-      margin-top: clamp(0px, 1vw, 20px);
+      // margin-top: clamp(0px, 1vw, 20px);
       width: 100%;
       height: 1px;
       background-color: var(--contrast-color);
-  }
+      margin-top: auto;
+    }
 }
 .products--promo{
   margin: 200px 0;
@@ -107,7 +112,7 @@
 
   .products {
     margin: 0;
-
+    margin-top: -20px;
       .products__btns {
           display: none;
       }
@@ -136,7 +141,7 @@
         margin-bottom: 90px !important;
       }
       .swiper-scrollbar--develop{
-        margin-bottom: 90px !important;
+        margin-bottom: 40px !important;
       }
       .swiper-scrollbar--reklama{
         margin-bottom: 90px !important;

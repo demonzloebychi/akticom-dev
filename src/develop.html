@@ -873,7 +873,7 @@
 
                   <h5 class="plan__card_small-title">{FRONTEND</h5>
 
-                  <p class="plan__card-text plan__card-text-front">
+                  <p class="big-text plan__card-text plan__card-text-front">
                     Разрабатываем <br />
                     интуитивно-понятную <br />
                     <span>клиентскую</span> часть
@@ -914,7 +914,7 @@
 
                   <h5 class="plan__card_small-title">{BACKEND</h5>
 
-                  <p class="plan__card-text plan__card-text-front">
+                  <p class="big-text plan__card-text plan__card-text-front">
                     Настраиваем надежную <br />
                     <span>серверную</span> часть
                   </p>
@@ -1002,7 +1002,7 @@
                         />
                       </svg>
                     </div>
-                    <p class="plan__card-text">
+                    <p class="plan__card-text big-text">
                       Обеспечим <span>интеграцию</span> с внутренними и внешними
                       системами
                     </p>
@@ -1055,12 +1055,12 @@
                         />
                       </svg>
                     </div>
-                    <p class="plan__card-text">
+                    <p class="plan__card-text big-text">
                       Все проекты проверяем по чек-листам и покрываем
                       <span>тестами</span>
                     </p>
                   </div>
-
+ 
                   <div class="plan__card card-plan">
                     <div class="card-plan__svg card-plan__svg--col">
                       <svg
@@ -1089,7 +1089,7 @@
                         />
                       </svg>
                     </div>
-                    <p class="plan__card-text">
+                    <p class="plan__card-text big-text">
                       Интегрируем продукты практически
                       <span>с любым решением</span> на рынке
                     </p>
@@ -1099,8 +1099,9 @@
             </div>
           </div>
         </div>
-
-        @include('partials/spec.html') @include('partials/team.html')
+        @include('partials/spec-header-1.html')
+        @include('partials/spec.html') 
+        @include('partials/team.html')
 
         <div class="models">
           <div class="container">
