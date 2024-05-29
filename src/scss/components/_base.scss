@@ -350,6 +350,10 @@
       top: 550px;
       right: 50px;
   }
+  .item-tabs-base__img-line-tab-mob{
+    display: none;
+
+  }
   .item-tabs-base__img-line-tab-support{
       position: absolute;
       top: 25%;
@@ -514,7 +518,7 @@
       min-width: 290px;
   }
   .base-btn--dop{
-    margin-top: 40px !important;
+    margin-top: 20px !important;
 }
 
   .nav-tabs-base__group{
@@ -533,8 +537,16 @@
       .item-tabs-base__img-back-reklama {
         position: relative;
         margin-top: -35px;
-        margin-left: -95px;
+        margin-left: -95px;        
         }
+      
+      .item-tabs-base__img-line-tab-mob{
+        display: block;
+        position: absolute;
+        width: 80%;
+        top: 15%;
+      }  
+
 
       .item-tabs-base__img-back {
         position: relative;

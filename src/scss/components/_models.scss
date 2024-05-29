@@ -14,7 +14,7 @@
       align-items: center;
       justify-content: end;
       gap: 40px;
-  }
+  } 
   .models__card {
       background-color: #1D1D1D;
       padding: 30px;
@@ -44,16 +44,19 @@
   .card-models__svg {
   }
   .card-models__img {
-      position: absolute;
-      z-index: -1;
+    right: 3%;
+    position: absolute;
+    z-index: -1;
   }
+  .card-models__img-1{
+    top: 15%;
+
+  }
+
   .card-models__img svg{
       max-width: 100%;
   }
-  .card-models__img--col{
-      position: relative;
-
-  }
+ 
   .card-models__img--svg{
       position: absolute;
       right: 8%;
@@ -111,7 +114,7 @@
 }
 @media (max-width:425px) {
   .models {
-      margin: 75px 0;
+      margin: 70px 0;
       .card-models__text {
           white-space: wrap;
           br{
