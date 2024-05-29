@@ -40,7 +40,7 @@
   .info__header{
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: clamp(15px, 2vw, 30px);
   }
   .info__header--design{
     display: flex;
@@ -186,12 +186,12 @@
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-between;
       align-items: center;
-      gap: 40px;
+      gap: clamp(15px, 2vw, 40px);
   }
   .info__card {
       border-radius: 15px;
       background: #101010;
-      padding: 35px;
+      padding: clamp(20px, 2vw, 35px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -297,10 +297,11 @@
       display: none;
   }
   .info .info__img {
+    overflow: hidden;
       max-width: 80%;
       position: absolute;
       z-index: -2;
-      top: 9%;
+      top: 11%;
       right: 10%;
       background: radial-gradient(closest-side, rgba(151, 71, 255, 0.2), transparent);
   }
@@ -326,12 +327,20 @@
       //     position: absolute;
       //     top: 10%;
       // }
+      .card-info {
+        height: auto;
+        gap: 20px;
+    }
+  
   }
   .info-reklama{
     margin-top: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
   .info--promo{
     margin-top: 90px;
   }
+}
+.info__text--reklama{
+  max-width: 301px;
 }

@@ -6,7 +6,7 @@
 .ads__card {
     background-color: var(--third-dark-color);
     border-radius: 15px;
-    padding: 30px;
+    padding: clamp(20px, 2vw, 30px);
    
    
 }

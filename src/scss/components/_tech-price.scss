@@ -69,20 +69,20 @@
   .tp-card__price {
       color: var(--main-font);
       font-family: 'Geologica', sans-serif;;
-      font-size: clamp(20px, 2.5vw, 40px);
+      font-size: clamp(24px, 2.5vw, 40px);
       font-weight: 400;
       line-height: 110%;
       text-transform: uppercase;
       white-space: nowrap;
   }
   .tp-card__time {
-      font-size: clamp(14px, 1.3vw, 20px);    }
+      font-size: clamp(16px, 1.3vw, 20px);    }
   .green-text {
   }
   .tp-card__date {
       color: rgb(66, 66, 66);
       font-family: 'Geologica', sans-serif;
-      font-size: clamp(14px, 1.3vw, 20px);
+      font-size: clamp(16px, 1.3vw, 20px);
       font-weight: 400;
       line-height: 110%;
       text-transform: uppercase;
@@ -120,17 +120,18 @@
   .tech-price{
     margin: 50px 0 0 0;
       .tech-price__cards {
-          margin-top: 70px;
+          margin-top: 30px;
           grid-template-columns: 1fr;
       }
       .tech-price__cards--3 {
         grid-template-columns: 1fr;
     }
       .tp-card {
-          height: 95vw;
+        margin: 0 25px;
+          height: 80vw;
       }
       .tp-card:not(:first-child){
-          margin-left: 0px;
+          margin-left: 25px;
           margin-top: -10px;
       }
 

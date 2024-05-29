@@ -1,10 +1,9 @@
-
 .models {
   margin: 205px 0;
   .models__body {
   }
   .models__header {
-      margin-bottom: 62px;
+      margin-bottom: clamp(35px, 4vw, 62px);
       @include header-line;
   }
   .models__title {
@@ -49,7 +48,7 @@
     z-index: -1;
   }
   .card-models__img-1{
-    top: 15%;
+    top: 16%;
 
   }
 
