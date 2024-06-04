@@ -1,0 +1,145 @@
+.parallax {
+
+    // height: 100%;
+    // overflow: hidden;
+
+}
+
+
+.parallax__body {
+    // perspective: 1px;
+    // transform-style: preserve-3d;
+
+    
+  
+
+    //фон паралакса
+    background-image: url(../img/parallax-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // gap: 44px;
+    // height: fit-content;
+    // width: 100%;
+}
+.parallax__body--scrolls{
+    box-sizing: border-box;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    // transform-style: inherit;
+    width: 100%;
+    padding: 150px 0 ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+    gap: 320px;
+
+
+//   height: 100%;
+//   overflow: auto;
+
+}
+.parallax__body--scrolls:before{
+//     content: " ";
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     z-index: -1;
+//     transform-origin: center;
+//     min-height: 100vh;
+
+
+  
+//     //паралакс
+
+//     transform: translateZ(-1px) scale(2);
+}
+
+
+.parallax__body--scroll{
+//   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+//   z-index: 1;
+}
+.parallax__body--scrolls::-webkit-scrollbar {
+//   width: 0;
+
+}
+.parallax__body--1 {
+
+}
+
+.parallax__svg {
+}
+.parallax__title {
+    color: #DBDBDB;
+    text-align: center;
+    font-family: 'Geologica', serif;
+    font-size: clamp(14px, 3vw, 40px);
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.parallax__title span{
+    color: var(--contrast-color);
+}
+.parallax__line {
+    margin-top: 40px;
+    width: 286px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #8C8C8C;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+}
+
+.parallax__wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    padding: 120px 0;
+    justify-content: center;
+
+}
+
+@media (max-width:1024px) {
+
+    .parallax__body {
+        background-size: 140%;
+        background-position: 50% 0%;
+        height: 500px;
+    }
+
+
+    .parallax__body--scrolls{
+        padding: 70px 0 0 0;
+    }
+}
+
+
+@media (max-width:450px) {
+    .parallax {
+
+    }
+    .parallax__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0;
+    }
+}
