@@ -8,12 +8,15 @@
       @include('partials/header.html')
 
       <main class="main">
-        <div class="base">
-          <div class="container">
-            <div class="base__tabs tabs-base">
-              <div class="tabs-base__default">
+        <div class="case-name">
+            <div class="container">
+              <div class="case-name__wrapper case-name__wrapper--services">
+                <h1 class="title-h1 _anim-items _anim-no-hide _anim-fade-in-left">
+                    Услуги
+                </h1>
+  
                 <div
-                  class="item-tabs-base__btns _anim-items _anim-no-hide _anim-from-left"
+                  class="item-tabs-base__btns case-name__btns _anim-items _anim-no-hide _anim-fade-in-right"
                 >
                   <div class="item-tabs-base_btn">
                     <svg
@@ -230,191 +233,350 @@
                     </svg>
                   </div>
                 </div>
-
-                <div class="background-image-pink">
-                  <img src="/img/pink.png" alt="" />
-                </div>
-
-                <div class="base--reklama"></div>
-                <h1
-                  class="item-tabs-base__main-text _anim-items _anim-no-hide _anim-fade-in-down"
-                >
-                  РЕКЛАМА
-                </h1>
-                <p
-                  class="item-tabs-base__support-text _anim-items _anim-no-hide _anim-fade-in-left"
-                >
-                  Устраивает количество лидов? <br />
-                  Будет еще больше!
-                </p>
-
-                <div
-                  class="item-tabs-base__img is-active _anim-items _anim-no-hide _anim-from-right-bot base-background"
-                >
-                  <img
-                    class="item-tabs-base__img-back item-tabs-base__img-back-reklama"
-                    src="/img/reklama-back.png"
-                    alt=""
-                  />
-                  <img
-                    class="item-tabs-base__img-line-tab-3"
-                    src="/img/line-for-back-rekl.png"
-                    alt=""
-                  />
-                  <img
-                    class="item-tabs-base__img-line-tab-3-2"
-                    src="/img/line-for-back-rekl.png"
-                    alt=""
-                  />
-                  <img
-                    class="item-tabs-base__img-line-tab-mob"
-                    src="/img/svg/line-mob.png"
-                    alt=""
-                  />
-                  <div class="item-tabs-base__texts">
-                    <p style="margin-top: -4%; margin-left: 14%">TARGET</p>
-                    <p style="margin-left: -47%; margin-top: 1%">
-                      contextual ads
-                    </p>
-                    <p style="margin-left: 108%; margin-top: -17%">ADS</p>
-                    <p style="margin-left: 70%; margin-top: 38%">TARGET</p>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
-          <a
-            class="base-btn base-btn--dop _anim-items _anim-no-hide _anim-from-left"
-          >
-            Обсудить проект
-          </a>
         </div>
 
-        <div class="info info-reklama _anim-items _anim-no-hide _anim-fade-in-center">
+
+
+        <div class="services">
           <div class="container">
-            <div class="info__body">
-              <div class="info__top">
-                <div
-                  class="info__header _anim-items _anim-no-hide _anim-fade-in-left"
-                >
-                  <h2 class="info__title title-h2">
-                    более 50 000 000 <br />
-                    новых покупателей
-                  </h2>
-                  <p class="info__text info__text--reklama">
-                    За минувший год мы привели на сайта наших клиентов
-                  </p>
-                </div>
+            <div class="services__wrapper">
+              <div class="services__cards">
 
-                <div
-                  class="info__img _anim-items _anim-no-hide _anim-fade-in-right"
-                >
-                  <img src="/img/info-abstract.png" alt="" />
+                <div class="services__card card-service">
+                  <div class="card-service__left">
+                    <div class="card-service__title">
+                      разработка
+                    </div>
 
-                  <div class="info__back-text background-text">
-                    <p style="margin-left: 4%">YANDEX</p>
-                    <p style="margin-left: -27%">GOOGLE</p>
-                    <p style="margin-left: -73%">contextual ads</p>
-                    <p style="margin-left: 63%; margin-top: -21%">YANDEX</p>
-                  </div>
-                </div>
-              </div>
+                    <p class="card-service__description s-text">
+                      Соберем для вас любой цифровой продукт, который понравится пользователям
+                    </p>
 
-              <div
-                class="info__cards _anim-items _anim-no-hide _anim-fade-in-top"
-              >
-                <div class="info__card card-info">
-                  <div class="card-info__svg">
-                    <svg
-                      width="60"
-                      height="60"
-                      viewBox="0 0 60 60"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="30"
-                        cy="30"
-                        r="29"
-                        stroke="#B8FF20"
-                        stroke-width="2"
-                      />
-                      <g transform="translate(10,15)">
-                        <path
-                          d="M37 1L15 28.5L1 15.5"
-                          stroke="#B8FF20"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <p class="info__card-text">
-                    Мы сертифицированное агентство, а значит каждый наш
-                    специалист может подтвердить свой профессионализм
-                    сертификатом
-                  </p>
-                </div>
-                <div class="info__card card-info">
-                  <div class="card-info__svg">
-                    <svg width="96" height="72" viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18 1H47V35H18C8.61116 35 1 27.3888 1 18C1 8.61116 8.61116 1 18 1Z" stroke="#B8FF20" stroke-width="2"/>
-                      <path d="M95 54C95 44.6112 87.3888 37 78 37H49V71H78C87.3888 71 95 63.3888 95 54Z" stroke="#B8FF20" stroke-width="2"/>
+                    <ul class="card-service__links">
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Интернет-магазины</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Корпоративные сайты</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Промо-сайты</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Мобильные приложения</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Лендинги</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">B2B-порталы</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Геймификация бизнеса</a>
+                      </li>
+                    </ul>
+
+                    <div class="card-service__more">
+                      <a href="" class="green-text s-text card-service__more-link">Узнать подробнее</a>
+
+
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.6 1.4H21.6V0.4H20.6V1.4ZM20.6 21H19.6V22H20.6V21ZM21 21V22H22V21H21ZM21 1H22V0H21V1ZM1 1V0H0V1H1ZM1 1.4H0V2.4H1V1.4ZM21.4097 2.00454C21.7988 1.6126 21.7965 0.97944 21.4045 0.590334C21.0126 0.201228 20.3794 0.203524 19.9903 0.595462L21.4097 2.00454ZM20.6 22H21V20H20.6V22ZM0 1V1.4H2V1H0ZM19.9903 0.595462L0.561385 20.1658L1.98072 21.5749L21.4097 2.00454L19.9903 0.595462ZM1 2.4H20.6V0.4H1V2.4ZM19.6 1.4V21H21.6V1.4H19.6ZM22 21V1H20V21H22ZM21 0H1V2H21V0Z" fill="#B8FF20"/>
                       </svg>
-                      
+                        
+                    </div>
                   </div>
-                  <p class="info__card-text">
-                    Настраиваем рекламу в Яндекс.Директ и Google Ads на
-                    получение качественных лидов для вашего бизнеса
-                  </p>
-                </div>
-                <div class="info__card card-info">
-                  <div class="card-info__svg card-info__svg--col">
-                    <svg width="85" height="69" viewBox="0 0 85 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="15" y="1" width="56" height="25" rx="12.5" stroke="#B8FF20" stroke-width="2"/>
-                      <rect x="1" y="43" width="83" height="25" rx="12.5" stroke="#B8FF20" stroke-width="2"/>
-                    </svg>
-                      
+             
+                  <div class="card-service__right">
+                    <div class="card-service__img">
+                      <img src="../img/dev-back.png" alt="">
+                    </div>
                   </div>
-                  <p class="info__card-text">
-                    Возьмем на себя полный комплекс работ: от подбора ключевых
-                    слов до настройки аналитики и оптимизации рекламных кампаний
-                  </p>
+                  
+
                 </div>
+
+                <div class="services__card card-service">
+                  <div class="card-service__left">
+                    <div class="card-service__title">
+                      РЕКЛАМА
+                    </div>
+
+                    <p class="card-service__description s-text">
+                      Устраивает количество лидов? Будет еще больше!
+                    </p>
+
+                    <ul class="card-service__links">
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Настройка рекламных кампаний</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Ведение рекламных кампаний</a>
+                      </li>
+                    </ul>
+
+                    <div class="card-service__more">
+                      <a href="" class="green-text s-text card-service__more-link">Узнать подробнее</a>
+
+
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.6 1.4H21.6V0.4H20.6V1.4ZM20.6 21H19.6V22H20.6V21ZM21 21V22H22V21H21ZM21 1H22V0H21V1ZM1 1V0H0V1H1ZM1 1.4H0V2.4H1V1.4ZM21.4097 2.00454C21.7988 1.6126 21.7965 0.97944 21.4045 0.590334C21.0126 0.201228 20.3794 0.203524 19.9903 0.595462L21.4097 2.00454ZM20.6 22H21V20H20.6V22ZM0 1V1.4H2V1H0ZM19.9903 0.595462L0.561385 20.1658L1.98072 21.5749L21.4097 2.00454L19.9903 0.595462ZM1 2.4H20.6V0.4H1V2.4ZM19.6 1.4V21H21.6V1.4H19.6ZM22 21V1H20V21H22ZM21 0H1V2H21V0Z" fill="#B8FF20"/>
+                      </svg>
+                        
+                    </div>
+                  </div>
+             
+                  <div class="card-service__right">
+                    <div class="card-service__img">
+                      <img src="../img/reklama-back.png" alt="">
+                    </div>
+                  </div>
+                  
+
+                </div>
+
+                <div class="services__card card-service">
+                  <div class="card-service__left">
+                    <div class="card-service__title">
+                      дизайн
+                    </div>
+
+                    <p class="card-service__description s-text">
+                      Больше 15 лет мы создаем дизайн и делаем это круто.
+                    </p>
+
+                    <ul class="card-service__links">
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">НUI/UX-дизайн</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Дизайн мобильных приложений</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Редизайн сайта и модернизация</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Создание корпоративного стиля</a>
+                      </li>
+                    </ul>
+
+                    <div class="card-service__more">
+                      <a href="" class="green-text s-text card-service__more-link">Узнать подробнее</a>
+
+
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.6 1.4H21.6V0.4H20.6V1.4ZM20.6 21H19.6V22H20.6V21ZM21 21V22H22V21H21ZM21 1H22V0H21V1ZM1 1V0H0V1H1ZM1 1.4H0V2.4H1V1.4ZM21.4097 2.00454C21.7988 1.6126 21.7965 0.97944 21.4045 0.590334C21.0126 0.201228 20.3794 0.203524 19.9903 0.595462L21.4097 2.00454ZM20.6 22H21V20H20.6V22ZM0 1V1.4H2V1H0ZM19.9903 0.595462L0.561385 20.1658L1.98072 21.5749L21.4097 2.00454L19.9903 0.595462ZM1 2.4H20.6V0.4H1V2.4ZM19.6 1.4V21H21.6V1.4H19.6ZM22 21V1H20V21H22ZM21 0H1V2H21V0Z" fill="#B8FF20"/>
+                      </svg>
+                        
+                    </div>
+                  </div>
+             
+                  <div class="card-service__right">
+                    <div class="card-service__img">
+                      <img src="../img/design.png" alt="">
+                    </div>
+                  </div>
+                  
+
+                </div>
+                
+                <div class="services__card card-service">
+                  <div class="card-service__left">
+                    <div class="card-service__title">
+                      Техподдержка
+                    </div>
+
+                    <p class="card-service__description s-text">
+                      Когда после релиза нужно забота 
+о диджитал-продукте
+                    </p>
+
+                    <ul class="card-service__links">
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Программирование и доработка сайта</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Техподдержка мобильных приложений</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Интеграция сервисов</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Перенос сайта на Битрикс</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Лицензия 1С Битрикс</a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">Контентная поддержка</a>
+                      </li>
+                    </ul>
+
+                    <div class="card-service__more">
+                      <a href="" class="green-text s-text card-service__more-link">Узнать подробнее</a>
+
+
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.6 1.4H21.6V0.4H20.6V1.4ZM20.6 21H19.6V22H20.6V21ZM21 21V22H22V21H21ZM21 1H22V0H21V1ZM1 1V0H0V1H1ZM1 1.4H0V2.4H1V1.4ZM21.4097 2.00454C21.7988 1.6126 21.7965 0.97944 21.4045 0.590334C21.0126 0.201228 20.3794 0.203524 19.9903 0.595462L21.4097 2.00454ZM20.6 22H21V20H20.6V22ZM0 1V1.4H2V1H0ZM19.9903 0.595462L0.561385 20.1658L1.98072 21.5749L21.4097 2.00454L19.9903 0.595462ZM1 2.4H20.6V0.4H1V2.4ZM19.6 1.4V21H21.6V1.4H19.6ZM22 21V1H20V21H22ZM21 0H1V2H21V0Z" fill="#B8FF20"/>
+                      </svg>
+                        
+                    </div>
+                  </div>
+             
+                  <div class="card-service__right">
+                    <div class="card-service__img">
+                      <img src="../img/support.png" alt="">
+                    </div>
+                  </div>
+                  
+
+                </div>
+
+                <div class="services__card card-service">
+                  <div class="card-service__left">
+                    <div class="card-service__title">
+                      Исследование и аналитика
+                    </div>
+
+                    <p class="card-service__description s-text">
+                      Найдем все ваши слабые места
+                    </p>
+
+                    <ul class="card-service__links">
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          SEO-аудит
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Технический аудит
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Юзабилити аудит
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Маркетинговый аудит
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Разработка тех. задания
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Конкурентный анализ
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="card-service__more">
+                      <a href="" class="green-text s-text card-service__more-link">Узнать подробнее</a>
+
+
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.6 1.4H21.6V0.4H20.6V1.4ZM20.6 21H19.6V22H20.6V21ZM21 21V22H22V21H21ZM21 1H22V0H21V1ZM1 1V0H0V1H1ZM1 1.4H0V2.4H1V1.4ZM21.4097 2.00454C21.7988 1.6126 21.7965 0.97944 21.4045 0.590334C21.0126 0.201228 20.3794 0.203524 19.9903 0.595462L21.4097 2.00454ZM20.6 22H21V20H20.6V22ZM0 1V1.4H2V1H0ZM19.9903 0.595462L0.561385 20.1658L1.98072 21.5749L21.4097 2.00454L19.9903 0.595462ZM1 2.4H20.6V0.4H1V2.4ZM19.6 1.4V21H21.6V1.4H19.6ZM22 21V1H20V21H22ZM21 0H1V2H21V0Z" fill="#B8FF20"/>
+                      </svg>
+                        
+                    </div>
+                  </div>
+             
+                  <div class="card-service__right">
+                    <div class="card-service__img">
+                      <img src="../img/analitics.png" alt="">
+                    </div>
+                  </div>
+                  
+
+                </div>
+                
+                <div class="services__card card-service">
+                  <div class="card-service__left">
+                    <div class="card-service__title">
+                      Продвижение
+                    </div>
+
+                    <p class="card-service__description s-text">
+                      Подберем наиболее эффективные способы продвижения
+                    </p>
+
+                    <ul class="card-service__links">
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          SEO-продвижение
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Продвижение молодых сайтов
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Разовая оптимизация
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Вывод сайта из-под фильтров
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          SERM
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Дзен
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          ASO
+                        </a>
+                      </li>
+                      <li>
+                        <a class="green-text s-text card-service__link" href="">
+                          Копирайтинг
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="card-service__more">
+                      <a href="" class="green-text s-text card-service__more-link">Узнать подробнее</a>
+
+
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.6 1.4H21.6V0.4H20.6V1.4ZM20.6 21H19.6V22H20.6V21ZM21 21V22H22V21H21ZM21 1H22V0H21V1ZM1 1V0H0V1H1ZM1 1.4H0V2.4H1V1.4ZM21.4097 2.00454C21.7988 1.6126 21.7965 0.97944 21.4045 0.590334C21.0126 0.201228 20.3794 0.203524 19.9903 0.595462L21.4097 2.00454ZM20.6 22H21V20H20.6V22ZM0 1V1.4H2V1H0ZM19.9903 0.595462L0.561385 20.1658L1.98072 21.5749L21.4097 2.00454L19.9903 0.595462ZM1 2.4H20.6V0.4H1V2.4ZM19.6 1.4V21H21.6V1.4H19.6ZM22 21V1H20V21H22ZM21 0H1V2H21V0Z" fill="#B8FF20"/>
+                      </svg>
+                        
+                    </div>
+                  </div>
+             
+                  <div class="card-service__right">
+                    <div class="card-service__img">
+                      <img src="../img/prod.png" alt="">
+                    </div>
+                  </div>
+                  
+
+                </div>
+
               </div>
             </div>
           </div>
         </div>
 
-        <div class="products products--reklama">
-          <div class="products__body">
-            <div class="container">
-              <div class="products__header">
-                <h2
-                  class="products__title products__title--reklama title-h2 _anim-items _anim-no-hide _anim-fade-in-left"
-                >
-                  Форматы рекламы
-                </h2>
-               
-              </div>
+    
 
-              @include('partials/reklama-4-cards.html') 
-
-
-            </div>
-
-           
-
-          </div>
-        </div>
-
-        @include('partials/parallax.html') 
-
-
-     
-        @include('partials/spec-header-1.html')
-        @include('partials/spec.html') 
-        @include('partials/team.html')
-        @include('partials/project.html') 
         @include('partials/connect.html')
         @include('partials/btn-on-top.html')
 

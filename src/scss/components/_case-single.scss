@@ -8,6 +8,16 @@
   border-bottom: 1px solid #d9d9d9;
 
 }
+
+.case-name__wrapper--services{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 40px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: none;
+
+}
+
 .case-name__btns{
   display: flex;
   gap: 10px;

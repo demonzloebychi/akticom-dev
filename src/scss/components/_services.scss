@@ -1,0 +1,88 @@
+.services {
+}
+
+.services__wrapper {
+}
+.services__cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 80px;
+}
+.services__card {
+    
+}
+.card-service {
+    height: fit-content;
+    padding-inline: 40px;
+    padding-block: 30px;
+    border-radius: 30px;
+    background-color: var(--third-dark-color);
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    // grid-template-areas: 
+    // 'title title title img img'
+    // 'desc desc desc img img'
+    // 'links links links .'
+    // 'links links links .'
+    // 'more more . .';
+}
+
+.card-service__left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-service__title {
+    
+    // grid-area: title;
+    font-family: 'Geologica', sans-serif;
+    font-size: clamp(24px, 2vw, 40px);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+.card-service__description {
+    // grid-area: desc;
+    // font-family: 'Manrope', sans-serif;
+    // font-size: clamp(14px, 1.7vw, 20px);
+    // font-weight: 400;
+    // line-height: 1.4;
+    max-width: 450px;
+}
+.card-service__links {
+    // grid-area: links;
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 20px;
+    row-gap: 10px;
+    column-gap: 20px;
+
+
+}
+.card-service__link {
+    text-decoration: underline;
+
+}
+.card-service__more {
+    margin-top: 46px;
+    // grid-area: more;
+    border-bottom: 1px solid var(--contrast-color);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.card-service__more-link {
+    // grid-area: more;
+
+}
+.card-service__img{
+    // grid-area: img;
+    margin-top: -100px;
+    max-width: 300px;
+}
