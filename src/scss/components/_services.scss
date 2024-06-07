@@ -15,9 +15,9 @@
 }
 .card-service {
     height: fit-content;
-    padding-inline: 40px;
-    padding-block: 30px;
-    border-radius: 30px;
+    padding-inline: clamp(20px, 2vw, 40px);
+    padding-block: clamp(20px, 2vw, 30px);
+    border-radius: clamp(15px, 2vw, 30px);
     background-color: var(--third-dark-color);
     // width: 100%;
     display: grid;
@@ -40,7 +40,7 @@
     
     // grid-area: title;
     font-family: 'Geologica', sans-serif;
-    font-size: clamp(24px, 2vw, 40px);
+    font-size: clamp(20px, 6.4vw, 40px);
     font-weight: 600;
     text-transform: uppercase;
     line-height: 1;
@@ -85,4 +85,68 @@
     // grid-area: img;
     margin-top: -100px;
     max-width: 300px;
+}
+
+.card-service-3 ul{
+    width: 130%;
+}
+
+.card-service-4{
+    margin-top: -40px;
+    ul{
+        width: 140%;
+
+    }
+}
+
+.card-service-5 {
+    ul{
+        width: 136%;
+        margin-top: 32px;
+    }
+    
+}
+.card-service-6 ul{
+    width: 115%;
+}
+@media (max-width:1024px) {
+    .services__cards {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+    }
+    .card-service-3, .card-service-4, .card-service-5, .card-service-6 {
+        margin-top: 0;
+        ul{
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    .card-service__links {
+        width: 140% !important;
+        row-gap: 10px;
+        column-gap: 10px;
+    
+    }
+    .card-service__more {
+        margin-top: 10px;
+        
+    }
+
+}
+@media (max-width:530px){
+    .card-service__img{
+        // grid-area: img;
+        margin-top: -50px;
+        // min-width: 50px;
+       
+    }
+
+    .card-service__links {
+        width: 130% !important;
+        row-gap: 10px;
+        column-gap: 10px;
+    
+    }
 }
