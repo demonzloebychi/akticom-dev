@@ -24,6 +24,7 @@ body{
   --main-background: #000000;
   --second-dark-color: #101010;
   --third-dark-color: #1d1d1d;
+  --fourth-dark-color: #404040;
   --main-font: #FFFFFF;
   --contrast-color: #B8FF20;
   --contrast-color-hover: #D9FF88;
@@ -100,6 +101,15 @@ body{
   line-height: 1.1;
   text-transform: uppercase;
 }
+
+.xl-text{
+  font-family: 'Geologica', sans-serif;
+  font-size: clamp(20px, 6.4vw, 40px);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
 .big-text{
   color: var(--main-font);
   font-family: 'Manrope', sans-serif;
@@ -140,6 +150,12 @@ body{
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: clamp(14px, 1.5vw, 20px);
+  line-height: 1.5;
+}
+.xs-text{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.5vw, 16px);
   line-height: 1.5;
 }
 

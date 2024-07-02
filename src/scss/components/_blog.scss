@@ -1,0 +1,56 @@
+.blog {
+  margin-top: 60px;
+}
+
+.blog__wrapper {
+}
+.blog__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.blog__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: var(--third-dark-color);
+  padding: 30px;
+  border-radius: 20px;
+
+}
+.card-blog {
+}
+.card-blog__col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-blog__date {
+}
+.card-blog__title {
+}
+.card-blog__more {
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.card-blog__more-link {
+  padding-inline: 73px;
+  padding-block: 24px;
+  border-radius: 8px;
+  color: var(--fourth-dark-color);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.card-vacancy__description {
+  margin-top: 15px;
+  color: var(--main-font);
+  opacity: 0.7;
+}
+.card-blog__img {
+  img{
+    border-radius: 10px;
+
+  }
+
+}
