@@ -25,6 +25,7 @@ body{
   --second-dark-color: #101010;
   --third-dark-color: #1d1d1d;
   --fourth-dark-color: #404040;
+  --fifth-dark-color: #AFAFAF;
   --main-font: #FFFFFF;
   --contrast-color: #B8FF20;
   --contrast-color-hover: #D9FF88;
@@ -93,6 +94,7 @@ body{
   line-height: 1.1;
   text-transform: uppercase;
 }
+
 .title-h3{
   color: var(--main-font);
   font-family: 'Geologica', sans-serif;

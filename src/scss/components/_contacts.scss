@@ -1,0 +1,101 @@
+.contact {
+
+
+}
+
+.contact__wrapper {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.contact__cards {
+  margin-top: 80px;
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(30px, 4vw, 140px);
+
+}
+
+
+.contact__card {
+}
+.card-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+.contacts-texts{
+  font-weight: 200;
+}
+.card-contact__top {
+}
+.card-contact__num {
+  color: var(--main-font);
+  font-family: 'Geologica', sans-serif;
+  font-size: clamp(28px, 4vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+}
+.card-contact__description {
+  color: var(--fifth-dark-color);
+}
+
+
+.contact-card__img {
+  position: absolute;
+  right: 0;
+  top: 15%;
+}
+
+
+
+.message {
+}
+.container {
+}
+.message__wrapper {
+  margin-top: 80px;
+}
+.message__cards {
+}
+.message__card {
+}
+.card-message {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-message__title {
+}
+.green-text {
+}
+.text {
+}
+.contacts-texts {
+}
+.card-message__link {
+}
+
+@media (max-width: 1550px) {
+  .contact-card__img {
+    display: none;
+  }
+  .contact__cards {
+    max-width: 100%;
+    justify-content: space-between;
+
+  }
+
+}
+
+@media (max-width: 660px) {
+  .contact__cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
