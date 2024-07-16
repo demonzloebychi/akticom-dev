@@ -28,6 +28,8 @@
 
 @import "./components/tasks";
 
+@import "./components/about";
+
 @import "./components/reklama-4-cards";
 
 @import "./components/project";
@@ -73,6 +75,13 @@
 @import "./components/parallax";
 
 @import "./components/services";
+
+@import "./components/service-single";
+
+
+.d-n{
+  display: none;
+}
 
 .swiper-scrollbar {
   background-color: #525252 !important;
