@@ -443,76 +443,83 @@
 </div>
 </div>
 </div>
+
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-const steps = document.querySelectorAll(".form-step");
-const backButton = document.getElementById("back");
-const nextButton = document.getElementById("next");
-const submitButton = document.getElementById("submit");
-let currentStep = 0;
-const lastStep = steps.length - 1; // Индекс последнего шага
+
+// Форма обратной связи: начало
+document.addEventListener("DOMContentLoaded", function  () {
+  const steps = document.querySelectorAll(".form-step");
+  const backButton = document.getElementById("back");
+  const nextButton = document.getElementById("next");
+  const submitButton = document.getElementById("submit");
+  let currentStep = 0;
+  const lastStep = steps.length - 1; // Индекс последнего шага
 
 
 
 
 
-// Load saved responses from local storage
-for (let i = 1; i <= 4; i++) {
-  const savedValue = localStorage.getItem(`step${i}`);
-  if (savedValue) {
-      document.querySelector(`.form-step:nth-child(${i}) .option[data-value="${savedValue}"]`)?.classList.add("selected");
+  // Load saved responses from local storage
+  for (let i = 1; i <= 4; i++) {
+    const savedValue = localStorage.getItem(`step${i}`);
+    if (savedValue) {
+        document.querySelector(`.form-step:nth-child(${i}) .option[data-value="${savedValue}"]`)?.classList.add("selected");
+    }
   }
-}
 
-function showStep(step) {
-  steps.forEach((s, index) => {
-      s.classList.toggle("active", index === step);
+  function showStep(step) {
+    steps.forEach((s, index) => {
+        s.classList.toggle("active", index === step);
+    });
+    backButton.disabled = step === 0;
+    nextButton.disabled = step === lastStep;
+  }
+
+  function saveResponse(step, value) {
+    localStorage.setItem(`step${step}`, value);
+  }
+
+  document.querySelectorAll(".option").forEach(button => {
+    button.addEventListener("click", function () {
+        const step = this.dataset.step;
+        const value = this.dataset.value;
+
+        saveResponse(step, value);
+        currentStep++;
+        showStep(currentStep);
+    });
   });
-  backButton.disabled = step === 0;
-  nextButton.disabled = step === lastStep;
-}
 
-function saveResponse(step, value) {
-  localStorage.setItem(`step${step}`, value);
-}
-
-document.querySelectorAll(".option").forEach(button => {
-  button.addEventListener("click", function () {
-      const step = this.dataset.step;
-      const value = this.dataset.value;
-
-      saveResponse(step, value);
-      currentStep++;
-      showStep(currentStep);
+  backButton.addEventListener("click", function () {
+    if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+    }
   });
-});
-
-backButton.addEventListener("click", function () {
-  if (currentStep > 0) {
-      currentStep--;
-      showStep(currentStep);
-  }
-});
-nextButton.addEventListener("click", function () {
-  if (currentStep >= 0 && currentStep < lastStep) {
-      currentStep++;
-      showStep(currentStep);
-  }
-});
+  nextButton.addEventListener("click", function () {
+    if (currentStep >= 0 && currentStep < lastStep) {
+        currentStep++;
+        showStep(currentStep);
+    }
+  });
 
 
 
 
 
-submitButton.addEventListener("click", function () {
-  const comments = document.getElementById("comments").value;
-  localStorage.setItem("comments", comments);
-  alert("Ваши ответы сохранены!");
-  localStorage.clear(); // Очистить local storage после отправки
-  currentStep = 0;
+  submitButton.addEventListener("click", function () {
+    const comments = document.getElementById("comments").value;
+    localStorage.setItem("comments", comments);
+    alert("Ваши ответы сохранены!");
+    localStorage.clear(); // Очистить local storage после отправки
+    currentStep = 0;
+    showStep(currentStep);
+  });
+
   showStep(currentStep);
-});
+  });
+// Форма обратной связи: конец
 
-showStep(currentStep);
-});
+
 </script>

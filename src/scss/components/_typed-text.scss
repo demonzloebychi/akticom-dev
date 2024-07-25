@@ -1,0 +1,14 @@
+.item-tabs-base__main-text{
+  display: inline;
+  color: var(--main-font);
+  font-family: 'Geologica', sans-serif;
+  font-size: clamp(28px, 6vw, 102px);
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  z-index: 5;
+  white-space: nowrap;
+}
+#typed-strings span{
+  display: inline;
+}
