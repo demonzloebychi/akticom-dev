@@ -60,6 +60,8 @@
   margin-top: 80px;
 }
 .message__cards {
+  display: flex;
+  justify-content: space-between;
 }
 .message__card {
 }
@@ -68,6 +70,35 @@
   flex-direction: column;
   gap: 30px;
 }
+
+.card-message__btns {
+  display: flex;
+}
+
+.card-message__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(43px, 7vw, 100px);
+  background-color: #575757;
+  border-radius: 50%;
+  border: 3px solid var(--main-font);
+  svg{
+    width: clamp(65px, 7vw, 140px);
+    height: clamp(65px, 7vw, 140px);
+  }
+}
+.card-message__btn:nth-child(1){
+  position: relative;
+  z-index: 2;
+  margin-right: -20px;
+}
+.card-message__btn:nth-child(2){
+  position: relative;
+  z-index: 1;
+  margin-right: -20px;
+}
+
 
 .card-message__title {
 }
@@ -88,6 +119,34 @@
     max-width: 100%;
     justify-content: space-between;
 
+  }
+
+}
+@media (max-width: 768px) {
+  .message__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-message__link{
+    display: none;
+  }
+  .card-message__btn:nth-child(1){
+    position: static;
+    margin-right: 0px;
+  }
+  .card-message__btn:nth-child(2){
+    position: static;
+    margin-right: 0px;
+  }
+  .card-message__btns{
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .message{
+    margin-bottom: 120px;
   }
 
 }

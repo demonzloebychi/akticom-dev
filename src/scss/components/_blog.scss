@@ -10,39 +10,54 @@
   gap: 40px;
 }
 .blog__card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
   background: var(--third-dark-color);
-  padding: 30px;
+  padding: clamp(15px, 2.5vw, 30px);
   border-radius: 20px;
 
 }
+
 .card-blog {
-}
-.card-blog__col {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
 }
 
-.card-blog__date {
+
+.card-blog__col{
+  display: flex;
+  flex-wrap: wrap;
+
 }
-.card-blog__title {
+
+.card-blog__date{
+  margin-bottom: 15px;
 }
+.card-blog__title{
+  max-width: 550px;
+}
+
+
+
+
 .card-blog__more {
   margin-top: auto;
   margin-bottom: 30px;
+  margin-block: clamp(16px, 2.5vw, 28px);
+
 }
 
 .card-blog__more-link {
-  padding-inline: 73px;
-  padding-block: 24px;
+  padding-inline: clamp(43px, 2.5vw, 73px);
+  padding-block: clamp(14px, 2.5vw, 24px);
   border-radius: 8px;
   color: var(--fourth-dark-color);
   white-space: nowrap;
   text-transform: uppercase;
 }
-.card-vacancy__description {
+.card-blog__description {
+  max-width: 500px;
+  padding-top: clamp(0px, 2vw, 25px);
   margin-top: 15px;
   color: var(--main-font);
   opacity: 0.7;
@@ -50,7 +65,28 @@
 .card-blog__img {
   img{
     border-radius: 10px;
-
+    width: 100%;
   }
 
+}
+
+@media (max-width:1700px) {
+  .card-blog {
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .card-blog__description{
+    margin: 15px 0;
+    padding-top: 0;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .blog__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+  }
 }

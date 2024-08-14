@@ -353,14 +353,20 @@
     <h3 class="form-discuss__title">Контакты</h3>
       <div class="form-connect__variants--inputs">
         <input
+          id="name"
           placeholder="Ваше имя"
           oninput="this.className = ''"
         />
         <input
+          id="number"
+          type="tel"
           placeholder="Номер телефона"
           oninput="this.className = ''"
+          maxlength="18"
         />
+
         <input
+          id="comments"
           placeholder="Комментарий"
           oninput="this.className = ''"
         />
@@ -372,11 +378,11 @@
 
 <div class="navs">
   <div class="steps">
-    <span class="step">Тип проекта</span>
-    <span class="step">Услуга</span>
-    <span class="step">Состояние</span>
-    <span class="step">Старт</span>
-    <span class="step">Контакты</span>
+    <span class="step" data-step="1">Тип проекта</span>
+    <span class="step" data-step="2">Услуга</span>
+    <span class="step" data-step="3">Состояние</span>
+    <span class="step" data-step="4">Старт</span>
+    <span class="step" data-step="5">Контакты</span>
   </div>
 
   <div class="buttons">
@@ -453,11 +459,31 @@ document.addEventListener("DOMContentLoaded", function  () {
   const backButton = document.getElementById("back");
   const nextButton = document.getElementById("next");
   const submitButton = document.getElementById("submit");
+  const stepIndicators = document.querySelectorAll(".step");
   let currentStep = 0;
   const lastStep = steps.length - 1; // Индекс последнего шага
 
 
+  document.querySelector('#number').onkeydown = function(e){
+    inputphone(e,document.querySelector('#number'))
+    }
 
+
+    //Функция маски формат +7 (
+    function inputphone(e, phone){
+    function stop(evt) {
+        evt.preventDefault();
+    }
+    let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+
+    if(not == 1 || 'Backspace' === not){
+    if('Backspace' != not){
+        if(v.length < 3 || v ===''){phone.value= '+7 ('}
+        if(v.length === 7){phone.value= v +') '}
+        if(v.length === 12){phone.value= v +'-'}
+         if(v.length === 15){phone.value= v +'-'}
+        }
+    }else{stop(e)}  }
 
 
   // Load saved responses from local storage
@@ -471,10 +497,14 @@ document.addEventListener("DOMContentLoaded", function  () {
   function showStep(step) {
     steps.forEach((s, index) => {
         s.classList.toggle("active", index === step);
+        stepIndicators[index].classList.toggle("active", index === step);
+
     });
     backButton.disabled = step === 0;
     nextButton.disabled = step === lastStep;
   }
+
+
 
   function saveResponse(step, value) {
     localStorage.setItem(`step${step}`, value);
@@ -509,8 +539,15 @@ document.addEventListener("DOMContentLoaded", function  () {
 
 
   submitButton.addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    localStorage.setItem("name", comments);
+
+    const number = document.getElementById("number").value;
+    localStorage.setItem("number", comments);
+
     const comments = document.getElementById("comments").value;
     localStorage.setItem("comments", comments);
+
     alert("Ваши ответы сохранены!");
     localStorage.clear(); // Очистить local storage после отправки
     currentStep = 0;

@@ -6,8 +6,44 @@
   }
 }
 .about{
-  .team{
-    margin: -20px 0 150px 0;
-  }
-}
 
+
+  .team{
+    margin-top: -20px;
+    margin-bottom: 150px;
+  }
+  .case-task__photo{
+    overflow: hidden;
+    width: 100%;
+    height: clamp(220px, 27vw, 442px);
+    // height: 442px;
+
+  }
+  .case-task__photo > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-page__logo-img img{
+    width: clamp(50%, 20vw, 100%);
+    margin: 0 auto;
+  }
+
+}
+.case-photo__wrapper{
+  padding-block: 40px;
+}
+@media (max-width:768px) {
+  .about{
+    .team{
+      margin-top: 20px;
+    }
+    .case-task{
+      .display-case{
+        padding: 0px 0 40px 0;
+      }
+    }
+  }
+
+}
