@@ -1,0 +1,68 @@
+.review {
+  margin-block: clamp(30px, 10vw, 70px);
+}
+.review__wrappper {
+}
+.review__cards {
+}
+.cards-review {
+  display: flex;
+  gap: clamp(20px, 2.4vw, 40px);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-review {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--third-dark-color);
+  padding: clamp(15px, 2vw, 30px);
+  border-radius: 15px;
+  flex: 1 0 31%;
+  min-width: 290px;
+}
+.card-review__date {
+  margin-bottom: 5px;
+}
+.card-revies__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-review__name {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.25;
+  color: var(--main-font);
+}
+.card-review__stars {
+  display: flex;
+  gap: 4px;
+}
+.card-review__star {
+  svg{
+    fill: #7e7e7e;
+  }
+  svg.active{
+    fill: #B8FF20;
+
+  }
+}
+.card-review__description {
+  margin: 15px 0 20px 0;
+}
+.card-review__more-link {
+  margin-top: auto;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  border-bottom: 2px solid var(--contrast-color);
+  padding-bottom: 2px;
+}
+@media (max-width: 768px) {
+  .card-revies__header {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 2px;
+  }
+}
