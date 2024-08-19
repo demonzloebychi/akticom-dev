@@ -1,8 +1,11 @@
 var images = document.images,
   images_total_count = images.length,
   images_loaded_count = 0;
-perc_display = document.getElementById("load_perc");
+// perc_display = document.getElementById("load_perc");
 progress_bar = document.getElementById("progress");
+const preNum = document.getElementById("preloader-num");
+const preName = document.getElementById("preloader-name");
+
 
 for (var i = 0; i < images_total_count; i++) {
   image_clone = new Image();
@@ -16,8 +19,27 @@ function image_loaded() {
   progress_bar.style.width = `${
     (100 / images_total_count) * images_loaded_count
   }%`;
-  perc_display.innerHTML =
-    (((100 / images_total_count) * images_loaded_count) << 0) + "%";
+  // perc_display.innerHTML =
+  //   (((100 / images_total_count) * images_loaded_count) << 0) + "%";
+
+
+  // Изменяем значения каждые 25%
+    // if (images_loaded_count === Math.floor(images_total_count * 0.25)) {
+    //   preNum.innerText = '01';
+    //   preName.innerText = 'Разработка';
+    // } else
+    if (images_loaded_count === Math.floor(images_total_count * 0.250)) {
+      preNum.innerText = '02';
+      preName.innerText = 'Продвижение';
+    } else if (images_loaded_count === Math.floor(images_total_count * 0.5)) {
+      preNum.innerText = '03';
+      preName.innerText = 'SEO';
+    } else if (images_loaded_count === Math.floor(images_total_count * 0.75)) {
+      preNum.innerText = '04';
+      preName.innerText = 'Дизайн';
+    }
+
+
 
   if (images_loaded_count >= images_total_count) {
     document.body.onload = function () {

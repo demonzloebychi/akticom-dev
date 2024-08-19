@@ -23,19 +23,19 @@
   }
   .progress-bar {
     position: absolute;
-    bottom: 100px;
+    top: 150px;
     width: 90%;
-    height: 80px;
-    background: var(--main-background);
+    height: 6px;
+    background: var(--sixth-dark-color);
     border-radius: 15px;
     left: 5%;
   }
   .progress {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    background: #5b12b9;
-    height: 80px;
+    background: var(--main-font);
+    height: 6px;
     border-radius: 15px;
   }
 }
@@ -43,4 +43,11 @@
 .preloader.done {
   opacity: 0;
   visibility: hidden;
+}
+
+.preloader-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
 }
