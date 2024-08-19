@@ -106,6 +106,24 @@ for (let i = 0; i < accordionItems.length; i++) {
   });
 }
 
+
+const cardLang = document.querySelectorAll(".card-lang__item");
+
+for (let i = 0; i < cardLang.length; i++) {
+  cardLang[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    for (let j = 0; j < cardLang.length; j++) {
+      if (cardLang[j] !== this) {
+        cardLang[j].classList.remove("active");
+      }
+    }
+  });
+}
+
+
+
+
 let link = document.querySelectorAll(".menu__link");
 
 for (i = 0; i < link.length; i++) {
@@ -225,6 +243,37 @@ const swiperTeam = new Swiper(".team__body", {
   },
 });
 
+
+
+
+
+const swiperThanks = new Swiper(".thanks__body", {
+  navigation: {
+    nextEl: ".thanks-next",
+    prevEl: ".thanks-prev",
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1.2, spaceBetween: 20 },
+
+    768: { slidesPerView: 2, spaceBetween: 20 },
+
+    1024: { slidesPerView: 3, spaceBetween: 40 },
+
+    1440: { slidesPerView: 4, spaceBetween: 40 },
+
+  },
+
+});
+
+
+
+
+
+
+
+
+
 const swiperPhoto = new Swiper(".photo-items__wrapper", {
   navigation: {
     nextEl: ".photo-items-next",
@@ -243,6 +292,8 @@ const swiperPhoto = new Swiper(".photo-items__wrapper", {
     1620: { slidesPerView: 2.7 },
   },
 });
+
+
 
 const spoilerItems = document.querySelectorAll(".spoiler-item");
 

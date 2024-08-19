@@ -1,0 +1,92 @@
+.languages {
+}
+
+
+.languages__wrappper {
+}
+.languages__cards {
+  margin-top: 76px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 40px;
+}
+.languages__card {
+  background-color: var(--third-dark-color);
+  padding: 30px;
+  border-radius: 15px;
+
+}
+.card-lang {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+
+}
+.card-lang__img {
+}
+.card-lang__info {
+  display: grid;
+  gap: 15px;
+}
+.card-lang__title {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: 1.25;
+  color: var(--main-color);
+}
+.card-lang__description {
+  color: var(--second-light-color);
+
+}
+
+.card-lang_more-link {
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  border-bottom: 2px solid var(--contrast-color);
+  width: fit-content;
+
+}
+.active {
+}
+.card-lang__text-more {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+  margin: 0 auto;
+  color: var(--second-light-color);
+  font-weight: 300;
+
+}
+.card-lang__item.active .card-lang__text-more {
+  grid-template-rows: 1fr;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  margin-top: 30px;
+
+}
+.card-lang__item.active .card-lang_more-link svg{
+  transition: 1s ease;
+  transform: rotate(90deg);
+}
+
+.card-lang__item .card-lang_more-link svg{
+  transition: 1s ease;
+
+}
+@media (max-width:1024px) {
+  .languages__card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .languages__cards {
+    grid-template-columns: 1fr;
+  }
+}
