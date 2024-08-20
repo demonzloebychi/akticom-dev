@@ -44,10 +44,31 @@
   opacity: 0;
   visibility: hidden;
 }
-
+.preloader-logo{
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
 .preloader-info{
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
+  margin-top: 130px;
+}
+.preloader-num {
+  border-radius: 50%;
+  border: 1px solid var(--main-font);
+  font-family: 'Geologica', sans-serif;
+  font-size: clamp(18px, 1.6vw, 36px);
+  font-weight: 600;
+  line-height: 1.1;
+  padding: clamp(10px, 2vw, 20px);
+}
+.preloader-name {
+  font-family: 'Geologica', sans-serif;
+  font-size: clamp(28px, 6vw, 102px);
+  font-weight: 600;
+  line-height: 1.1;
+
 }

@@ -19,15 +19,9 @@ function image_loaded() {
   progress_bar.style.width = `${
     (100 / images_total_count) * images_loaded_count
   }%`;
-  // perc_display.innerHTML =
-  //   (((100 / images_total_count) * images_loaded_count) << 0) + "%";
 
 
   // Изменяем значения каждые 25%
-    // if (images_loaded_count === Math.floor(images_total_count * 0.25)) {
-    //   preNum.innerText = '01';
-    //   preName.innerText = 'Разработка';
-    // } else
     if (images_loaded_count === Math.floor(images_total_count * 0.250)) {
       preNum.innerText = '02';
       preName.innerText = 'Продвижение';
