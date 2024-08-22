@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   background: var(--main-background);
-  z-index: 100;
+  z-index: 9999999;
   transition: all 1s ease 0s;
   opacity: 1;
   visibility: visible;
@@ -22,13 +22,12 @@
     text-transform: uppercase;
   }
   .progress-bar {
-    position: absolute;
-    top: 150px;
-    width: 90%;
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
     height: 6px;
     background: var(--sixth-dark-color);
     border-radius: 15px;
-    left: 5%;
   }
   .progress {
     position: absolute;
@@ -54,7 +53,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
-  margin-top: 130px;
+  margin-top: 70px;
 }
 .preloader-num {
   border-radius: 50%;
