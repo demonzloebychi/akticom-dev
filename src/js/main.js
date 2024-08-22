@@ -1,51 +1,55 @@
-var images = document.images,
-  images_total_count = images.length,
-  images_loaded_count = 0;
-// perc_display = document.getElementById("load_perc");
-progress_bar = document.getElementById("progress");
-const preNum = document.getElementById("preloader-num");
-const preName = document.getElementById("preloader-name");
+const preloader = () => {
 
+  const images = document.images;
+  const images_total_count = images.length;
+  let images_loaded_count = 0;
 
-for (var i = 0; i < images_total_count; i++) {
-  image_clone = new Image();
-  image_clone.onload = image_loaded;
-  image_clone.onerror = image_loaded;
-  image_clone.src = images[i].src;
-}
+  const progress_bar = document.getElementById("progress");
+  const preNum = document.getElementById("preloader-num");
+  const preName = document.getElementById("preloader-name");
 
-function image_loaded() {
-  images_loaded_count++;
-  progress_bar.style.width = `${
-    (100 / images_total_count) * images_loaded_count
-  }%`;
+  // Функция для обновления прелоудера
+  function updatePreloader() {
+    // Обновляем прогресс-бар плавно
+    progress_bar.style.width = `${(100 / 400) * images_loaded_count}%`;
 
-
-  // Изменяем значения каждые 25%
-    if (images_loaded_count === Math.floor(images_total_count * 0.250)) {
+    // Изменяем значения каждую секунду
+    if (images_loaded_count === 100) {
       preNum.innerText = '02';
       preName.innerText = 'Продвижение';
-    } else if (images_loaded_count === Math.floor(images_total_count * 0.5)) {
+    } else if (images_loaded_count === 200) {
       preNum.innerText = '03';
       preName.innerText = 'SEO';
-    } else if (images_loaded_count === Math.floor(images_total_count * 0.75)) {
+    } else if (images_loaded_count === 300) {
       preNum.innerText = '04';
       preName.innerText = 'Дизайн';
     }
 
+    images_loaded_count++;
+  }
 
+  // Запускаем обновление прелоудера каждые 10 мс
+  const intervalId = setInterval(function() {
+    updatePreloader();
 
-  if (images_loaded_count >= images_total_count) {
-    document.body.onload = function () {
-      var preloader = document.getElementById("page-preloader");
-      setTimeout(function () {
+    // Проверяем, достигли ли мы конца прелоудера
+    if (images_loaded_count >= 400) {
+      clearInterval(intervalId);
+      setTimeout(function() {
+        const preloader = document.getElementById("page-preloader");
         if (!preloader.classList.contains("done")) {
           preloader.classList.add("done");
         }
       }, 200);
-    };
-  }
+    }
+  }, 10); // Интервал в 10 мс
+
 }
+
+preloader()
+
+
+
 
 
 const defImage = document.querySelector(".defaul-image");
@@ -348,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let typed =new Typed('#typed', {
   typeSpeed: 200,
   backSpeed: 100,
-  startDelay: 100,
+  startDelay: 3800,
   loop: false,
   stringsElement: '#typed-strings',
 })
