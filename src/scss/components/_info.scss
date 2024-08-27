@@ -181,7 +181,7 @@
     margin-top: -300px;
 }
   .info__cards {
-      margin-top:160px;
+      margin-top: 150px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-between;
@@ -235,10 +235,20 @@
 
 .info-reklama{
   margin-top: 280px;
+  .info__title{
+    span{
+      color: var(--contrast-color);
+    }
+  }
 }
 .info--promo{
   margin-top: 230px;
   padding-top: 200px;
+}
+@media (min-width:768px) {
+  .info__text{
+    white-space: nowrap;
+  }
 }
 
 @media (max-width:1635px) {
@@ -331,7 +341,7 @@
         height: auto;
         gap: 20px;
     }
-  
+
   }
   .info-reklama{
     margin-top: 80px;

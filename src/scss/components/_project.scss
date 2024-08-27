@@ -58,9 +58,9 @@
       flex-direction: column;
   }
   .project__item {
-      margin-top: clamp(25px, 3.1vw, 40px);
+      margin-top: clamp(30px, 3.5vw, 60px);
       border-top: 1px solid var(--main-font);
-      padding-top: clamp(35px, 4vw, 70px);
+      padding-top: clamp(35px, 4vw, 71px);
   }
   .tab-project {
       display: flex;

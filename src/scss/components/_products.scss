@@ -91,6 +91,17 @@
       margin-top: auto;
     }
 }
+
+.develop-products{
+  .card-products__bottom{
+    justify-content: end;
+
+  }
+  .card-products__line{
+    margin-top: 0;
+  }
+}
+
 .products--promo{
   margin: 200px 0;
 }
