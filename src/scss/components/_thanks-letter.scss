@@ -49,6 +49,17 @@
   font-weight: 400;
 }
 
+.thanks-prev{
+  margin-left: -50px;
+  position: relative;
+  z-index: 99999;
+}
+.thanks-next{
+  margin-right: -50px;
+  position: relative;
+  z-index: 99999;
+}
+
 
 @media (max-width:450px) {
   .team {

@@ -110,6 +110,9 @@
   line-height: 110%;
   color: var(--main-font);
 }
+.case-single__case-result{
+  margin-bottom: -110px;
+}
 
 
 @media (max-width:1024px) {
@@ -117,6 +120,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
+  }
+  .case-single__case-result{
+    margin-bottom: -80px;
   }
 
 }
@@ -139,6 +145,9 @@
       }
       .analitics-item__text {
       }
+  }
+  .case-single__case-result{
+    margin-bottom: -40px;
   }
 
 }

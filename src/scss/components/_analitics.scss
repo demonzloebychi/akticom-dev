@@ -1,3 +1,10 @@
+.awcw__title{
+  margin-top: 80px ;
+
+}
+.awcw__cards{
+
+}
 .info--analitics{
   margin: 0 0 0 0 !important;
   margin-top: clamp(30px, 3vw, 200px) !important;
@@ -10,7 +17,7 @@
   .analitics__title {
       @include header-line;
       animation: slideLeft 2s;
-  } 
+  }
 
   .analitics__body {
       display: flex;
@@ -32,6 +39,8 @@
 
 
 }
+
+
 
 
 
@@ -130,7 +139,7 @@
       .analitics__list{
         .analitics-item{
             display: grid;
-            grid-template-areas: 
+            grid-template-areas:
             "a b b b d"
             "c c c c c";
             grid-template-columns: 30px 1fr 40px;
@@ -153,7 +162,7 @@
             }
         }
       }
-    
+
   }
   .analitics__list{
       width: 100%;

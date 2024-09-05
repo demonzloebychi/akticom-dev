@@ -1,7 +1,8 @@
 .products {
   margin: 120px 0 185px 0;
   .swiper-scrollbar--analitics{
-    margin-bottom: 30px !important;
+    margin-bottom: 0px !important;
+    margin-left: calc((100% - 1760px) / 2);
   }
   .products__body {
       position: relative;
@@ -35,7 +36,6 @@
   }
   .products__cards {
     display: flex;
-    gap: 30px;
     margin-left: 15px;
     padding-left: calc((100% - 1760px) / 2);
   }
@@ -92,18 +92,36 @@
     }
 }
 
-.develop-products{
+.develop-products, .analitics-products{
   .card-products__bottom{
     justify-content: end;
 
   }
   .card-products__line{
-    margin-top: 0;
+    margin-top: 20px;
   }
+}
+.analitics-products{
+  margin: -50px 0 185px 0;
+
+}
+@media (max-width:1024px) {
+  .analitics-products{
+    margin: -50px 0 185px 0;
+
+  }
+}
+.analitics-products-btn-prev{
+
+}
+.analitics-products-btn-next{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .products--promo{
-  margin: 200px 0;
+  margin: 200px 0 125px 0;
 }
 .products__title--reklama{
   max-width: 70%;

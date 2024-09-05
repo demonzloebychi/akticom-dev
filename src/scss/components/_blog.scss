@@ -31,10 +31,11 @@
 }
 
 .card-blog__date{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .card-blog__title{
   max-width: 550px;
+  line-height: 1.1;
 }
 
 
@@ -48,8 +49,8 @@
 }
 
 .card-blog__more-link {
-  padding-inline: clamp(43px, 2.5vw, 73px);
-  padding-block: clamp(14px, 2.5vw, 24px);
+  padding-inline: clamp(43px, 4.5vw, 71px);
+  padding-block: clamp(14px, 2.5vw, 22px);
   border-radius: 8px;
   color: var(--fourth-dark-color);
   white-space: nowrap;
@@ -63,11 +64,25 @@
   opacity: 0.7;
 }
 .card-blog__img {
+  display: flex;
+  width: 100%;
   img{
     border-radius: 10px;
     width: 100%;
   }
 
+}
+
+
+@media (min-width:1700px) {
+  .card-blog {
+    height: 372px;
+
+  }
+  .card-blog__more{
+
+    align-self: end;
+  }
 }
 
 @media (max-width:1700px) {

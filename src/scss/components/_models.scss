@@ -1,5 +1,5 @@
 .models {
-  margin: 205px 0;
+  margin: 205px 0 150px 0;
   .models__body {
   }
   .models__header {
@@ -13,7 +13,7 @@
       align-items: center;
       justify-content: end;
       gap: 40px;
-  } 
+  }
   .models__card {
       background-color: #1D1D1D;
       padding: 30px;
@@ -55,7 +55,7 @@
   .card-models__img svg{
       max-width: 100%;
   }
- 
+
   .card-models__img--svg{
       position: absolute;
       right: 8%;

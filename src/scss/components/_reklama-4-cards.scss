@@ -7,15 +7,15 @@
     background-color: var(--third-dark-color);
     border-radius: 15px;
     padding: clamp(20px, 2vw, 30px);
-   
-   
+
+
 }
 .card-ads {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 1fr;
     height: clamp(180px, 30vw, 320px);
-    
+
 }
 ._anim-items {
 }
@@ -37,15 +37,19 @@
     position: absolute;
     z-index: -1;
     top: 0;
-    right: 0%;
+    right: 0;
     svg{
-        max-width: 100%;
+        max-width: 90%;
     }
 }
-.card-ads__img-big{
-    top: 10%;
-    right: 10%;
+
+.ads__card:nth-child(2n + 1) .card-ads__img{
+
+  top: 25px;
+  right: 25px;
 }
+
+
 .card-ads__text {
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
@@ -86,17 +90,13 @@
             height: 160px;
         }
     }
-    .card-ads__img-big {
-        right: 0%;
-    }
+
 }
 
 @media (max-width: 450px) {
     .card-ads__img {
         right: -25%;
-       
+
     }
-    .card-ads__img-big {
-        right: -10%;
-    }
+
 }
