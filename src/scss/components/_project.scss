@@ -23,7 +23,14 @@
   .nav-project {
       display: flex;
       gap: 25px;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      overflow-x: scroll;
+      -ms-overflow-style: none;  /* IE и Edge */
+      scrollbar-width: none;  /* Firefox */
+      ::-webkit-scrollbar {
+  display: none;
+}
+
   }
   .nav-project__item {
       display: flex;

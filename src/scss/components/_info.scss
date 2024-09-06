@@ -1,6 +1,4 @@
-.analitics-info__title{
-  margin-top: 80px ;
-}
+
 .info{
   margin: 30px 0 90px 0;
   border-radius: 60px;
@@ -275,6 +273,8 @@
   .info__text{
     white-space: nowrap;
   }
+
+
 }
 
 
@@ -363,6 +363,9 @@
 
   .info-reklama{
     margin-top: 150px;
+    .card-info__svg svg{
+      height: 48px;
+    }
   }
   .info--promo{
     margin-top: 110px;

@@ -126,20 +126,36 @@ for (let i = 0; i < accordionItems.length; i++) {
   });
 }
 
+const cardLangMain = document.querySelectorAll(".card-lang");
+const cardLangItems = document.querySelectorAll(".card-lang__item");
 
-const cardLang = document.querySelectorAll(".card-lang__item");
+for (let i = 0; i < cardLangItems.length; i++) {
+  cardLangItems[i].addEventListener("click", function () {
+    // Убираем класс active у всех родительских элементов
+    cardLangMain.forEach(card => card.classList.remove("active"));
 
-for (let i = 0; i < cardLang.length; i++) {
-  cardLang[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-
-    for (let j = 0; j < cardLang.length; j++) {
-      if (cardLang[j] !== this) {
-        cardLang[j].classList.remove("active");
+    // Убираем класс active у всех дочерних элементов
+    for (let j = 0; j < cardLangItems.length; j++) {
+      if (cardLangItems[j] !== this) {
+        cardLangItems[j].classList.remove("active");
       }
+    }
+
+    // Добавляем класс active к текущему элементу и его родителю
+    this.classList.toggle("active");
+    if (this.classList.contains("active")) {
+      this.closest(".card-lang").classList.add("active");
+    } else {
+      this.closest(".card-lang").classList.remove("active");
     }
   });
 }
+
+
+
+
+
+
 
 
 
@@ -357,6 +373,9 @@ let typed =new Typed('#typed', {
   stringsElement: '#typed-strings',
 })
 //Набирающийся текст: конец
+
+
+
 
 
 

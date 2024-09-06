@@ -21,6 +21,7 @@
       padding-bottom: 19px;
       width: fit-content;
       position: relative;
+      font-size: clamp(28px, 2.4vw, 54px);
 
   }
   .start__title:after {
@@ -117,6 +118,10 @@
   .start{
       margin-top: 80px;
       margin-bottom: 0px;
+
+      .start__wrapper {
+        padding: 30px 20px;
+    }
 
       .start__title{
         margin-bottom: 0;
