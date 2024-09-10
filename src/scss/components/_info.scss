@@ -22,7 +22,7 @@
       border-radius: 100px;
       color: var(--main-font);
       font-family: 'Geologica', sans-serif;
-      font-size: 20px;
+      font-size: clamp(14px, 1.9vw, 20px);
       font-weight: 400;
       line-height: 1.1;
   }

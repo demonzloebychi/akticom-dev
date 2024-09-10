@@ -98,13 +98,21 @@
 
   }
   .card-products__line{
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+  .card-products__name {
+    color: var(--main-font);
+    font-family: 'Manrope', serif;
+    font-size: clamp(18px, 5vw, 32px);
+    font-weight: 500;
+    line-height: 1.1;
+    white-space: nowrap;
   }
 }
-.analitics-products{
-  margin: -50px 0 185px 0;
 
-}
+
+
+
 @media (max-width:1024px) {
   .analitics-products{
     margin: -50px 0 185px 0;
@@ -139,6 +147,7 @@
       }
   }
 }
+
 @media (max-width:450px) {
 
   .products {
@@ -197,14 +206,14 @@
       }
 
       .swiper-scrollbar--develop{
-        margin-bottom: 90px !important;
+        margin-bottom: 40px !important;
       }
 
       .swiper-scrollbar--reklama{
         margin-bottom: 120px !important;
       }
       .swiper-scrollbar--analitics{
-        margin-bottom: 90px !important;
+        margin-bottom: 40px !important;
       }
 
 

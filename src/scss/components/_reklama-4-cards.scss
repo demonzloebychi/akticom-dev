@@ -85,7 +85,7 @@
         grid-template-columns: 1fr;
     }
     .card-ads__img {
-        right: -10%;
+        right: 0%;
         svg{
             height: 160px;
         }
@@ -93,10 +93,3 @@
 
 }
 
-@media (max-width: 450px) {
-    .card-ads__img {
-        right: -25%;
-
-    }
-
-}

@@ -5,7 +5,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-  } 
+  }
   .year__body {
       display: flex;
       align-items: center;
@@ -15,7 +15,7 @@
           display: flex;
           flex-direction: column;
           gap: 30px;
-         
+
           .year__text-p{
               font-size: 16px;
               color: #E2E2E2;
@@ -28,7 +28,7 @@
               display: flex;
               gap: 44px;
               display: grid;
-              grid-template-areas: 
+              grid-template-areas:
               'a b b b'
               'a c c c'
               ;
@@ -114,14 +114,7 @@
           .year__margin{
               margin-left: -9vw;
           }
-          .year__circles{
-              position: absolute;
-              top: 9%;
-              right: -15%;
-          }
-          .year__circles svg{
-              width: clamp(280px, 45vw, 740px);
-          }
+
       }
       .year__right--design{
         opacity: 1;
@@ -142,25 +135,18 @@
       gap: 13px;
       .year__right{
         .year__img--design {
-          margin-left: 0;
-          max-width: 100%;
+          margin-inline: auto;
+          margin-top: -10px;
+          max-width: 70%;
         }
-        .year__circles {
-          position: absolute;
-          top: -5%;
-          right: 50%;
-          transform: translateX(50%);
-        }
-        .year__circles svg {
-          width: clamp(280px, 75vw, 680px);
-        }
-       
+
+
     }
       .year__left{
       gap: 20px;
 
         .year__btn {
-          
+
         }
         .year__title {
           white-space: wrap;
@@ -188,16 +174,44 @@
           margin-left: 0px;
         }
       }
-    } 
+    }
 
-  } 
+  }
 
-  
+
   .year--design{
     margin-top: 100px;
   }
+  .year__text--design{
+    display: none;
+  }
+  .year__title--design{
+    display: none;
+  }
+  .year__text-mobile{
+    -webkit-text-stroke: 1px var(--main-font);
+    span{
+      font-size: 100% - 20%;
+    }
+  }
+  .year__title--design-mobile{
+    margin-top: -10px;
+    font-size: clamp(24px, 3vw, 48px);
+  }
 
 }
+
+@media (min-width:1025px) {
+  .year__text-mobile{
+    display: none;
+  }
+  .year__title--design-mobile{
+    display: none;
+  }
+}
+
+
+
 
 
 @media (max-width:768px) {
@@ -207,13 +221,21 @@
   .year--design{
     margin-top: 80px;
   }
+
+}
+@media (max-width:600px){
+  .year .year__body .year__right .year__img--design {
+    margin-inline: auto;
+    margin-top: -10px;
+    max-width: 80%;
+  }
+
+
 }
 
 
 @media (max-width:450px) {
-  .year .year__body .year__right .year__circles {
-      top: -45%;
-  }
+
 
 
   .year .year__body  .year__right{
@@ -228,6 +250,19 @@
   .year .year__body .year__right  .year__img {
       margin-top: 20%;
   }
+  .year .year__body .year__left .year__text-p {
+    max-width: 100%;
+  }
+
+
+  .year .year__body .year__right .year__img--design {
+    margin-inline: auto;
+    margin-top: -10px;
+    max-width: 100%;
+  }
+
+
+
 
 
 

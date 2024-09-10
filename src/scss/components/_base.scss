@@ -116,6 +116,7 @@
     margin-top: 60px;
   }
   .item-tabs-base__main-text--research{
+    font-size: clamp(28px, 9.5vw, 102px);
 
   }
   .item-tabs-base__main-text--support{
@@ -634,7 +635,7 @@
       top: -4%;
     }
     .base-background--design{
-      top: -4%;
+      top: 2%;
     }
     .base-background--promo{
       top: -4%;

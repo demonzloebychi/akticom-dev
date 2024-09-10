@@ -2,6 +2,7 @@
 
     // height: 100%;
     // overflow: hidden;
+    margin-top: 80px;
 
 }
 
@@ -10,8 +11,8 @@
     // perspective: 1px;
     // transform-style: preserve-3d;
 
-    
-  
+
+
 
     //фон паралакса
     background-image: url(../img/parallax-back.png);
@@ -59,7 +60,7 @@
 //     min-height: 100vh;
 
 
-  
+
 //     //паралакс
 
 //     transform: translateZ(-1px) scale(2);
@@ -141,5 +142,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 0px 0;
+    }
+    .parallax__body {
+      height: 350px;
+    }
+    .parallax__body--scrolls {
+      height: 350px;
     }
 }
