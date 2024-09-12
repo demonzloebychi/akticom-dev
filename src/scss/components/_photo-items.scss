@@ -53,8 +53,8 @@ margin: 120px 0 150px 0;}
 .photo-items__card{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 30px;
+    gap: clamp(15px, 2vw, 30px);
+    padding: clamp(10px, 1.7vw, 30px);
     background-color: #525252;
     width: fit-content;
     height: fit-content;
@@ -81,6 +81,7 @@ margin: 120px 0 150px 0;}
     line-height: 1.1;
     letter-spacing: -0.72px;
 }
+
 .square__btn {
   width: 60px !important;
   height: 60px !important;
@@ -112,6 +113,11 @@ margin: 120px 0 150px 0;}
         width: 100%;
         height: 600px;
         padding-top: 100px;
+    }
+
+    .card-photo-items__svg svg{
+      width: 23px;
+      height: 23px;
     }
 }
 

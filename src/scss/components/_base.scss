@@ -335,6 +335,9 @@
 
   }
 
+  .item-tabs-base__img-back--promotion{
+    max-width: 90%;
+  }
 
 
 
@@ -371,6 +374,9 @@
       right: 0;
   }
   .item-tabs-base__img-line-tab-support-mob{
+    display: none;
+  }
+  .item-tabs-base__img-line-tab-promotion-mob{
     display: none;
   }
 }
@@ -588,6 +594,14 @@
       position: absolute;
       right: 5%;
       top: 0;
+    }
+    .item-tabs-base__img-line-tab-promotion-mob{
+      display: block;
+      position: absolute;
+      right: 15%;
+      top: 13%;
+      width: 90%;
+      transform: rotate(120deg);
     }
 
 

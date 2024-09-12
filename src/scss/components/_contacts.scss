@@ -4,11 +4,11 @@
 }
 
 .contact__wrapper {
-  padding-bottom: 100px;
+  padding-bottom: clamp(40px, 4vw, 100px);
   border-bottom: 1px solid #d9d9d9;
 }
 .contact__cards {
-  margin-top: 80px;
+  margin-top: clamp(40px, 4vw, 80px);
   max-width: 1300px;
   display: flex;
   flex-wrap: wrap;

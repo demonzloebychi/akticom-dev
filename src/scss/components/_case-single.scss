@@ -1,9 +1,11 @@
-
+.case-done .analitics {
+  margin: 0;
+}
 
 .case-name__wrapper{
   display: flex;
   justify-content: space-between;
-  padding-block: 40px;
+  padding-block: clamp(20px, 2vw, 40px);
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
@@ -12,7 +14,7 @@
 .case-name__wrapper--services{
   display: flex;
   justify-content: space-between;
-  padding-block: 40px;
+  padding-block: clamp(30px, 2vw, 40px);
   border-top: 1px solid #d9d9d9;
   border-bottom: none;
 
@@ -103,13 +105,13 @@
 }
 .case-result__block {
   display: grid;
-  gap: 20px;
+  gap: clamp(10px, 1.7vw, 20px);
 }
 
 .case-result-block__text {
   font-family: 'Manrope';
   font-weight: 500;
-  font-size: clamp(16px, 2.2vw, 24px);
+  font-size: clamp(12px, 2.2vw, 24px);
   line-height: 110%;
   color: var(--main-font);
 }
@@ -134,23 +136,48 @@
   .display-case{
       grid-template-columns: 1fr;
       gap: 20px;
+      padding: 30px 0 40px 0;
 
   }
+
+
+
+  .case-concept__imgs {
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    img{
+      width: 310px;
+      height: 200px;
+      object-fit: cover;
+
+    }
+
+
+  }
+  .case-concept__wrapper{
+    border-bottom: none;
+  }
+
+
+
 
 
 
 }
 @media (max-width:500px) {
-  .case-done__punkts {
 
-      .analitics-item__title {
-          width: fit-content;
-      }
-      .analitics-item__text {
-      }
-  }
   .case-single__case-result{
     margin-bottom: -40px;
+  }
+  .case-done__wrapper {
+    padding-bottom: 30px;
+    border-bottom: none
   }
 
 }
