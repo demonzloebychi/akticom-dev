@@ -1,6 +1,9 @@
 .languages {
 }
 
+.languages__title{
+  font-size: clamp(24px, 2.2vw, 96px);
+}
 
 .languages__wrappper {
   display: grid;
@@ -9,7 +12,7 @@
 
 }
 .languages__cards {
-  margin-top: 76px;
+  margin-top: clamp(30px, 2.5vw, 76px);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -105,6 +108,11 @@
 
 
 @media (max-width:768px) {
+  .languages {
+    .item-tabs-base__btns{
+      display: none;
+    }
+  }
   .languages__wrappper {
     grid-template-columns: 1fr;
   }

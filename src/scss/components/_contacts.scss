@@ -28,6 +28,7 @@
 }
 .contacts-texts{
   font-weight: 200;
+  font-size: clamp(15px, 2vw, 24px);
 }
 .card-contact__top {
 }
@@ -41,6 +42,8 @@
 }
 .card-contact__description {
   color: var(--fifth-dark-color);
+  font-family: 'Geologica', sans-serif;
+  font-weight: 300;
 }
 
 
@@ -57,7 +60,7 @@
 .container {
 }
 .message__wrapper {
-  margin-top: 80px;
+  margin-top: clamp(40px, 5vw, 80px);
 }
 .message__cards {
   display: flex;
@@ -86,6 +89,7 @@
   svg{
     width: clamp(65px, 7vw, 140px);
     height: clamp(65px, 7vw, 140px);
+    filter: drop-shadow(0 0 10px white);
   }
 }
 .card-message__btn:nth-child(1){

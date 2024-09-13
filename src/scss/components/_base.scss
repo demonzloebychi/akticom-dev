@@ -285,14 +285,14 @@
   }
 
   .base-background--single-service{
-    left: 55%;
+    left: 60%;
     top: -5%;
     width: 40%;
   }
  .base-line--single-service {
-    margin-right: -120px;
+    margin-right: 50px;
     margin-top: 60px;
-    max-width: 110%;
+    max-width: 100%;
 }
 
 
@@ -652,7 +652,14 @@
       top: 2%;
     }
     .base-background--promo{
+
       top: -4%;
+    }
+    .base-background--single-service{
+      top: -2%;
+      left: 17%;
+      width: 90%;
+
     }
 
   }

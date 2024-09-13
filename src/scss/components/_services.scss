@@ -11,7 +11,7 @@
     row-gap: 80px;
 }
 .services__card {
-    
+
 }
 .card-service {
     height: fit-content;
@@ -19,15 +19,9 @@
     padding-block: clamp(20px, 2vw, 30px);
     border-radius: clamp(15px, 2vw, 30px);
     background-color: var(--third-dark-color);
-    // width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    // grid-template-areas: 
-    // 'title title title img img'
-    // 'desc desc desc img img'
-    // 'links links links .'
-    // 'links links links .'
-    // 'more more . .';
+
 }
 
 .card-service__left{
@@ -37,8 +31,7 @@
 }
 
 .card-service__title {
-    
-    // grid-area: title;
+
     font-family: 'Geologica', sans-serif;
     font-size: clamp(20px, 6.4vw, 40px);
     font-weight: 600;
@@ -47,18 +40,12 @@
 
 }
 .card-service__description {
-    // grid-area: desc;
-    // font-family: 'Manrope', sans-serif;
-    // font-size: clamp(14px, 1.7vw, 20px);
-    // font-weight: 400;
-    // line-height: 1.4;
+
     max-width: 450px;
 }
 .card-service__links {
-    // grid-area: links;
     display: flex;
     flex-wrap: wrap;
-    // gap: 20px;
     row-gap: 10px;
     column-gap: 20px;
 
@@ -70,7 +57,6 @@
 }
 .card-service__more {
     margin-top: 46px;
-    // grid-area: more;
     border-bottom: 1px solid var(--contrast-color);
     width: fit-content;
     display: flex;
@@ -78,11 +64,9 @@
     gap: 15px;
 }
 .card-service__more-link {
-    // grid-area: more;
 
 }
 .card-service__img{
-    // grid-area: img;
     margin-top: -100px;
     max-width: 300px;
 }
@@ -104,7 +88,7 @@
         width: 136%;
         margin-top: 32px;
     }
-    
+
 }
 .card-service-6 ul{
     width: 115%;
@@ -127,26 +111,27 @@
         width: 140% !important;
         row-gap: 10px;
         column-gap: 10px;
-    
+
     }
     .card-service__more {
         margin-top: 10px;
-        
+
     }
 
 }
 @media (max-width:530px){
     .card-service__img{
-        // grid-area: img;
-        margin-top: -50px;
-        // min-width: 50px;
-       
+        margin-top: -70px;
+
     }
 
     .card-service__links {
         width: 130% !important;
         row-gap: 10px;
         column-gap: 10px;
-    
+
+    }
+    .card-service__description{
+      width: 150%;
     }
 }

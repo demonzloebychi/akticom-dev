@@ -6,6 +6,9 @@
   }
 }
 .about{
+  .case-task__wrapper{
+    padding-block: clamp(15px, 2vw, 40px);
+  }
 
 
   .team{
@@ -32,16 +35,22 @@
 
 }
 .case-photo__wrapper{
-  padding-block: 40px;
+  padding-block: clamp(27px, 3vw, 40px);
 }
 @media (max-width:768px) {
   .about{
     .team{
-      margin-top: 20px;
+      margin-top: 60px;
+    }
+    .spec{
+      margin-top: -100px;
+    }
+    .case-result{
+      margin-top: 30px;
     }
     .case-task{
       .display-case{
-        padding: 0px 0 40px 0;
+        padding: 0px 0 20px 0;
       }
     }
   }

@@ -5,4 +5,23 @@
     margin-top: 160px;
     margin-bottom: -160px;
   }
+  .case-task__wrapper{
+
+  }
+}
+
+@media (max-width:768px) {
+  .service-single{
+
+    .case-task__wrapper {
+      margin-top: 0px;
+      border-top: 0px;
+      margin-bottom: -20px;
+      padding-bottom: 0px;
+      border-bottom: 1px solid #d9d9d9;
+
+    }
+
+
+  }
 }
