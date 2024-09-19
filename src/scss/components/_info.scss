@@ -1,3 +1,16 @@
+@media (max-width:425px) {
+  .design .info .info__title {
+    font-size: clamp(30px, 4vw, 72px);
+  }
+  .design .info .info__text {
+    font-size: clamp(19px, 4vw, 36px);
+
+    br{
+      display: none;
+
+    }
+  }
+}
 
 .info{
   margin: 30px 0 90px 0;
@@ -51,7 +64,7 @@
   .info__header--design{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: clamp(15px, 2vw, 30px);
     position: relative;
     z-index: 1;
     margin-top: 100px;

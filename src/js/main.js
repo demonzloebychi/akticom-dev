@@ -331,19 +331,85 @@ const swiperPhoto = new Swiper(".photo-items__wrapper", {
 
 
 
-const spoilerItems = document.querySelectorAll(".spoiler-item");
+// const spoilerItems = document.querySelectorAll(".spoiler-item");
 
-for (let i = 0; i < spoilerItems.length; i++) {
-  spoilerItems[i].addEventListener("click", function () {
+// for (let i = 0; i < spoilerItems.length; i++) {
+//   spoilerItems[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+
+//     for (let j = 0; j < spoilerItems.length; j++) {
+//       if (spoilerItems[j] !== this) {
+//         spoilerItems[j].classList.remove("active");
+//       }
+
+
+
+//     }
+//   });
+// }
+
+
+
+// function toggleActiveClass() {
+//   const spoilerItems = document.querySelectorAll('.spoiler-item');
+
+//   if (document.documentElement.clientWidth <= 768) {
+//       spoilerItems.forEach(item => {
+//           item.classList.add('active');
+//       });
+//   } else {
+//       spoilerItems.forEach(item => {
+//           item.classList.remove('active');
+//       });
+//   }
+// }
+
+// // Вызов функции при загрузке страницы
+// toggleActiveClass();
+
+// // Отслеживание изменения размера окна
+// window.addEventListener('resize', toggleActiveClass);
+
+
+
+
+const spoilerItems = document.querySelectorAll('.spoiler-item');
+
+function toggleActiveClass() {
+    if (document.documentElement.clientWidth <= 768) {
+        // Удаляем все обработчики клика
+        spoilerItems.forEach(item => {
+            item.removeEventListener("click", handleClick);
+            item.classList.add('active'); // Добавляем класс active
+        });
+    } else {
+        // Добавляем обработчики клика для экранов больше 768px
+        spoilerItems.forEach(item => {
+            item.classList.remove('active'); // Удаляем класс active
+            item.addEventListener("click", handleClick);
+        });
+    }
+}
+
+function handleClick() {
     this.classList.toggle("active");
 
     for (let j = 0; j < spoilerItems.length; j++) {
-      if (spoilerItems[j] !== this) {
-        spoilerItems[j].classList.remove("active");
-      }
+        if (spoilerItems[j] !== this) {
+            spoilerItems[j].classList.remove("active");
+        }
     }
-  });
 }
+
+// Вызов функции при загрузке страницы
+toggleActiveClass();
+
+// Отслеживание изменения размера окна
+window.addEventListener('resize', toggleActiveClass);
+
+
+
+
 
 
 
@@ -373,6 +439,9 @@ let typed =new Typed('#typed', {
   stringsElement: '#typed-strings',
 })
 //Набирающийся текст: конец
+
+
+
 
 
 

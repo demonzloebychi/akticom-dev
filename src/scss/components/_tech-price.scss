@@ -31,7 +31,7 @@
   .tp-card {
       // max-width: 100%;
       height: 23.7vw;
-      padding: clamp(30px, 4vw, 65px);
+      padding: clamp(40px, 4vw, 65px);
       border-radius: 50%;
       border: 1px solid rgb(48, 48, 48);
       display: flex;
@@ -135,10 +135,10 @@
       }
       .tp-card:not(:first-child){
           margin-left: 25px;
-          margin-top: -15px;
+          margin-top: -20px;
       }
       .tech-price__cards--3{
-        margin-top: -15px;
+        margin-top: -20px;
       }
 
   }

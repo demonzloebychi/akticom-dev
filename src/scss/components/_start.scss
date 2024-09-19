@@ -144,9 +144,17 @@
           }
      }
      .start__btns{
-          gap: 0px;justify-content: space-between;
+          gap: 40px;
      }
 
   }
 
+}
+@media (max-width:350px){
+  .start{
+    .start__btns{
+      gap: 0px;
+      justify-content: space-between;
+ }
+  }
 }
